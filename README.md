@@ -1,4 +1,5 @@
-# stylelint-config-sass-guidelines
+# stylelint-config-sass-guidelines 
+[![Build Status](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines.svg?branch=master)](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines)
 
 > Sass Guidelines shareable config for stylelint.
 
