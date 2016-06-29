@@ -38,6 +38,8 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 }
 ```
 
+### [Lint Report Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Report-Comparison)
+
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
