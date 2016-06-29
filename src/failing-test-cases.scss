@@ -1,10 +1,10 @@
 // Bang Format test
 .bangformat {
-  color: #000!important; // Bang format test
   background-color: #000! important; // Bang format test
+  color: #000!important; // Bang format test
 }
 
-// Havn't found a way to test this with stylelint
+// Have not found a way to test this with stylelint
 // BEM Depth test
 // scss-lint:disable SelectorFormat
 // stylelint-disable selector-class-pattern
@@ -36,6 +36,7 @@ $color-blue: #1c94c6;
 .declarationorder {
   p {
     color: #f00;
+    background-color: #0f0;
   }
 
   color: #f00;
@@ -43,7 +44,7 @@ $color-blue: #1c94c6;
   @extend %error;
 }
 
-// stylelint does not seem to be checking this
+// Have not found a way to test this with stylelint
 // ElsePlacement test
 $width: auto;
 
@@ -96,7 +97,7 @@ a {
 @import 'foo/_bar.scss';
 @import '_bar.scss';
 @import '_bar';
-@import 'bar.scss'; // stylelint-scss does not seem to be checking this
+@import 'bar.scss';
 
 // Indentation test
 .indentation {
@@ -120,7 +121,6 @@ a {
   color: #fff;
 }
 
-// stylelint-scss rule for this seems to be broken
 $myVar: 10px;
 
 %placeHolder {
@@ -143,7 +143,7 @@ $myVar: 10px;
   @extend .error;
 }
 
-// stylelint does not seem to be checking this
+// Have not found a way to test this with stylelint
 // Private Naming Convention test
 // Enforces that functions, mixins, and variables that follow the private naming convention (default to underscore-prefixed, e.g. $_foo) are defined and used within the same file.
 
@@ -153,7 +153,7 @@ figcaption {
   color: #00f;
 }
 
-// stylelint does not seem to be checking this
+// Have not found a way to test this with stylelint
 // PropertySpelling test
 .propertyspelling {
   diplay: none; // "display" is spelled incorrectly
@@ -238,7 +238,7 @@ a[href='place'] {
   margin : 0;
 }
 
-// stylelint does not seem to be checking this
+// Have not found a way to test this with stylelint
 // SpaceAfterVariableColon test
 $spaceaftervariblecolon:#fff; // No space
 
@@ -261,8 +261,8 @@ $spaceaftervariblename : #f00;
   color: #f00;
 }
 
-// stylelint does not seem to support this?
 // allow_single_line_padding test
+// stylelint does not seem to support this
 .icon-chevronup    { &::before { content: '\e030'; } }
 .icon-chevrondown  { &::before { content: '\e031'; } }
 .icon-chevronleft  { &::before { content: '\e032'; } }
@@ -290,7 +290,6 @@ $spaceaftervariblename : #f00;
   margin: 0.500em;
 }
 
-// stylelint does not seem to support this?
 // UnnecessaryMantissa test
 .mantissa {
   margin: 1.0em;
@@ -309,25 +308,22 @@ $spaceaftervariblename : #f00;
 }
 
 // Vendor Prefixes test
-// stylelint does not seem to catch this
 @-webkit-keyframes anim {
   0% {
     opacity: 0;
   }
 }
 
-// stylelint does not seem to catch this
 ::-moz-placeholder {
   color: #f00;
 }
 
-.foo {
+.property-prefix {
   -webkit-transition: none;
 }
 
-// stylelint does not seem to catch this
-.bar {
-  position: -moz-sticky;
+.value-prefix {
+  display: -webkit-flex;
 }
 
 // Zero Unit test
