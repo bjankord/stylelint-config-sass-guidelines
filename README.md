@@ -1,8 +1,9 @@
-# stylelint-config-sass-guidelines
+# stylelint-config-sass-guidelines 
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-sass-guidelines.svg)](https://www.npmjs.org/package/stylelint-config-sass-guidelines) [![Build Status](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines.svg?branch=master)](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines)
 
 > Sass Guidelines shareable config for stylelint.
 
-Configuration rules to ensure your CSS code is compliant with [Sass Guidelines's code style](https://sass-guidelin.es/).
+A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/)
 
 ## Installation
 
@@ -36,6 +37,8 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
   }
 }
 ```
+
+### [Lint Report Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Report-Comparison)
 
 ## [Changelog](CHANGELOG.md)
 
