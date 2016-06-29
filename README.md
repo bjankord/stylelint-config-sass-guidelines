@@ -3,7 +3,7 @@
 
 > Sass Guidelines shareable config for stylelint.
 
-Configuration rules to ensure your CSS code is compliant with [Sass Guidelines's code style](https://sass-guidelin.es/).
+A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/)
 
 ## Installation
 
