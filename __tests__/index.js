@@ -15,8 +15,8 @@ const validCss = (
 .selector-baz[type='text'] {
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
-  display: block;
   color: #333;
+  display: block;
 }
 
 .selector-a,
@@ -48,26 +48,17 @@ const validCss = (
 /* Flush single line comment */
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .selector {
-    background-image:
-      repeating-linear-gradient(
-        -45deg,
-        transparent,
-        #fff 25px,
-        rgba(255, 255, 255, 1) 50px
-      );
+    background-image: repeating-linear-gradient(-45deg, transparent, #fff 25px, rgba(255, 255, 255, 1) 50px);
+    box-shadow: 0 1px 1px #000, 0 1px 0 #fff, 2px 2px 1px 1px #ccc inset;
+    height: 10rem;
     margin: 10px;
     margin-bottom: 5px;
-    box-shadow:
-      0 1px 1px #000,
-      0 1px 0 #fff,
-      2px 2px 1px 1px #ccc inset;
-    height: 10rem;
   }
 
   /* Flush nested single line comment */
   .selector::after {
-    content: '→';
     background-image: url('x.svg');
+    content: '→';
   }
 }
 

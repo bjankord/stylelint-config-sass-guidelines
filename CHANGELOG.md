@@ -10,6 +10,7 @@
 - Fixed: `max-nesting-depth` rule set to 1 to match Sass Guidelines NestingDepth max_depth: 1 rule
 - Fixed: Cleaned up comments in `failing-test-case.scss`
 - Fixed: Declaration order now sorted alphabetically in `passing-test-case.scss`
+- Fixed: Updated tests to account for new rules
 - Removed: `block-closing-brace-newline-after` rule
 - Removed: `no-extra-semicolons` rule
 - Removed: `string-no-newline` rule
