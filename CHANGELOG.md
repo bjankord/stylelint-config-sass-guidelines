@@ -1,3 +1,7 @@
+# In Development
+
+- Added: Documentation on configured lint rules in README.md
+
 # 0.2.0
 
 - Added: `function-parentheses-space-inside` rule
