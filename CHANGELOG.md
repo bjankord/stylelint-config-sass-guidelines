@@ -1,6 +1,7 @@
 # In Development
 
 - Added: Documentation on configured lint rules in README.md
+- Added: `stylelint-disable-reason` rule
 - Removed: `function-calc-no-unspaced-operator` rule
 
 # 0.2.0
