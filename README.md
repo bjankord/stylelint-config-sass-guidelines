@@ -38,7 +38,9 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 }
 ```
 
+## [Lint Rule Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Rule-Comparison)
 
+## [Lint Report Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Report-Comparison)
 
 ## Documentation
 
@@ -47,8 +49,6 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 * [`stylelint-scss`](https://github.com/kristerkari/stylelint-scss): A collection of SCSS specific linting rules for stylelint
 * [`scss/selector-no-redundant-nesting-selector`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md): Disallow redundant nesting selectors (`&`).
 * [`stylelint-selector-no-utility`](https://github.com/primer/stylelint-selector-no-utility): Stylelint rule that doesn't allow the styling of utility classes in CSS
-
-### [Lint Report Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Report-Comparison)
 
 ### Configured lints
 
@@ -94,7 +94,6 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### Function
 
-* [`function-calc-no-unspaced-operator`](http://stylelint.io/user-guide/rules/function-calc-no-unspaced-operator/): Disallow an unspaced operator within `calc` functions.
 * [`function-comma-space-after`](http://stylelint.io/user-guide/rules/function-comma-space-after/): There must always be a single space after the commas in single-line functions.
 * [`function-parentheses-space-inside`](http://stylelint.io/user-guide/rules/function-parentheses-space-inside/): There must never be whitespace on the inside of the parentheses of functions.
 * [`function-url-quotes`](http://stylelint.io/user-guide/rules/function-url-quotes/): URLs must always be quoted.
@@ -151,6 +150,10 @@ This is a list of the lints turned on in this configuration, and what they do.
 #### String
 
 * [`string-quotes`](http://stylelint.io/user-guide/rules/string-quotes/): Strings must always be wrapped with single quotes.
+
+#### Stylelint Disable Comment
+
+* [`stylelint-disable-reason`](http://stylelint.io/user-guide/rules/stylelint-disable-reason/): Require a reason comment before stylelint-disable comments.
 
 #### Value
 
