@@ -1,5 +1,6 @@
 # In Development
 
+- Added: CODE_OF_CONDUCT.md
 - Added: Documentation on configured lint rules in README.md
 - Added: `stylelint-disable-reason` rule
 - Removed: `function-calc-no-unspaced-operator` rule
