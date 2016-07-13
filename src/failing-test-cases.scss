@@ -248,8 +248,8 @@ $spaceaftervariblename : #f00;
 
 // SpaceAroundOperator test
 .spacearoundoperator {
-  margin: calc(5px+5px); // No Space
-  padding: calc(5px   +   5px); // Too much space
+  margin: 5px+5px;
+  padding: 5px   +   5px;
 }
 
 // SpaceBeforeBrace test
