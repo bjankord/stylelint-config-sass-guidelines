@@ -44,7 +44,7 @@
     "scss-lint-failing-case": "cd src; bundle exec scss-lint failing-test-cases.scss -c .scss-lint.yml; exit 0",
     "scss-lint-passing-case": "cd src; bundle exec scss-lint passing-test-cases.scss -c .scss-lint.yml; exit 0",
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss -s scss; exit 0",
-    "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss -c .stylelintrc.json -s scss; exit 0",
+    "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss -s scss; exit 0",
     "test": "npm run ava"
   }
 }
