@@ -1,5 +1,6 @@
 # In Development
 
+- Added: CONTRIBUTING.md
 - Added: CODE_OF_CONDUCT.md
 - Added: Documentation on configured lint rules in README.md
 - Added: `stylelint-disable-reason` rule
