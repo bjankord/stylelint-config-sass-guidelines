@@ -25,7 +25,6 @@ module.exports = {
         "none"
       ]
     },
-    "function-calc-no-unspaced-operator": true,
     "function-comma-space-after": "always-single-line",
     "function-parentheses-space-inside": "never",
     "function-url-quotes": "always",
@@ -79,7 +78,6 @@ module.exports = {
     "selector-pseudo-element-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "single",
-    "value-no-vendor-prefix": true,
     "value-no-vendor-prefix": true
   }
 }

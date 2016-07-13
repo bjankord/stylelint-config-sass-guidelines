@@ -25,7 +25,6 @@
         "none"
       ]
     },
-    "function-calc-no-unspaced-operator": true,
     "function-comma-space-after": "always-single-line",
     "function-parentheses-space-inside": "never",
     "function-url-quotes": "always",
