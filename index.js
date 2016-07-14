@@ -32,9 +32,11 @@ module.exports = {
     "length-zero-no-unit": true,
     "max-nesting-depth": 1,
     "media-feature-name-no-vendor-prefix": true,
-    "no-missing-eof-newline": true,
+    "media-feature-parentheses-space-inside": "never",
+    "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
+    "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "rule-nested-empty-line-before": [
       "always-multi-line",
