@@ -4,4 +4,5 @@
 node_modules
 npm-debug.log
 vendor
-notes.md
+coverage
+.nyc_output
