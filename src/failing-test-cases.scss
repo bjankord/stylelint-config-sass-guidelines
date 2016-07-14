@@ -330,3 +330,22 @@ $spaceaftervariblename : #f00;
 .zerounit {
   margin: 0px;
 }
+
+// SpaceBetweenParens media query test
+@media ( max-width: 300px ) {
+  .zerounit {
+    margin: 0;
+  }
+}
+
+@media (max-width: 300px ) {
+  .zerounit {
+    margin: 0;
+  }
+}
+
+// Property spelling test
+.property-spelling {
+  diplay: none; // "display" is spelled incorrectly
+  heigth: 100%; // "height" is spelled incorrectly
+}

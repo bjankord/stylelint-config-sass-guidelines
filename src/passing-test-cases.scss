@@ -226,3 +226,10 @@ $spaceaftervariblename: #f00;
 .zerounit {
   margin: 0;
 }
+
+// SpaceBetweenParens media query test
+@media (max-width: 300px) {
+  .media-parens {
+    margin: 0;
+  }
+}
