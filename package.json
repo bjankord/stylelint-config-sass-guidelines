@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sass-guidelines",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Sharable stylelint config based on https://sass-guidelin.es/",
   "keywords": [
     "stylelint",
@@ -25,26 +25,35 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-scss": "^1.1.1",
+    "stylelint-scss": "^1.2.1",
     "stylelint-selector-no-utility": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
     "copyfiles": "^1.0.0",
     "rename-files": "0.0.2",
     "replace": "^0.3.0",
-    "stylelint": "^6.7.0"
+    "stylelint": "^7.0.2",
+    "nyc": "^7.0.0",
+    "babel-cli": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-tape-runner": "^2.0.0",
+    "tape": "^4.2.0"
   },
   "scripts": {
-    "ava": "ava --verbose \"__tests__/**/*.js\"",
     "build": "npm run copy; npm run replace; npm run rename",
     "copy": "copyfiles -u 1 src/.stylelintrc.json .",
     "rename": "rename-files ./ '.stylelintrc.json' 'index.js'",
     "replace": "replace '^{+\n..\"plugins\":' 'module.exports = {\n \"plugins\":' .stylelintrc.json",
     "scss-lint-failing-case": "cd src; bundle exec scss-lint failing-test-cases.scss -c .scss-lint.yml; exit 0",
     "scss-lint-passing-case": "cd src; bundle exec scss-lint passing-test-cases.scss -c .scss-lint.yml; exit 0",
-    "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss -s scss; exit 0",
-    "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss -s scss; exit 0",
-    "test": "npm run ava"
+    "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
+    "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
+    "tape": "babel-tape-runner '__tests__/**/*.js'",
+    "test": "nyc npm run tape"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
