@@ -1,10 +1,13 @@
-# In Development
+# 1.0.0
 
-- Added: CONTRIBUTING.md
-- Added: CODE_OF_CONDUCT.md
-- Added: Documentation on configured lint rules in README.md
 - Added: `stylelint-disable-reason` rule
+- Added: `property-no-unknown` rule
+- Added: `media-feature-parentheses-space-inside` rule
+- Added: `no-missing-end-of-source-newline` rule
+- Removed: `no-missing-eof-newline `rule
 - Removed: `function-calc-no-unspaced-operator` rule
+- Updated: Bumped up `stylelint` to v7.0.2
+- Updated: Bumped up `stylelint-scss` to v1.2.1
 
 # 0.2.0
 
