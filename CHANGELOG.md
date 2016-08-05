@@ -1,3 +1,10 @@
+# 1.1.0
+
+- Added: `scss/dollar-variable-colon-space-after` rule
+- Added: `scss/dollar-variable-colon-space-before` rule
+- Updated: Bumped up `stylelint` to v7.1.0
+- Updated: Bumped up `stylelint-scss` to v1.3.4
+
 # 1.0.0
 
 - Added: `stylelint-disable-reason` rule

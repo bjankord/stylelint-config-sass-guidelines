@@ -238,13 +238,13 @@ a[href='place'] {
   margin : 0;
 }
 
-// Have not found a way to test this with stylelint
-// SpaceAfterVariableColon test
-$spaceaftervariblecolon:#fff; // No space
 
-// stylelint does not seem to be checking this
+// SpaceAfterVariableColon test
+$spaceaftervariablecolon:#fff; // No space
+
+
 // SpaceAfterVariableName test
-$spaceaftervariblename : #f00;
+$spaceaftervariablename : #f00;
 
 // SpaceAroundOperator test
 .spacearoundoperator {
