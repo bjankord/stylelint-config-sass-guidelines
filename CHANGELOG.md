@@ -1,6 +1,7 @@
 # 1.1.1
 
 - Fixed: Regex for selector-class-pattern now matches lowercase with hyphens correctly
+- Fixed: Updated test for url-quotes.js to match updated error text
 
 # 1.1.0
 

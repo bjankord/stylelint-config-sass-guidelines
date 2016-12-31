@@ -21,7 +21,7 @@ test("URL quotes scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Expected quotes around url argument (function-url-quotes)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected quotes (function-url-quotes)", "correct warning text")
   }
 })
 
