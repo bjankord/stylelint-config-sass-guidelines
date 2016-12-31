@@ -137,6 +137,90 @@ a:hover {
   color: #f00;
 }
 
+.foo {
+  color: #f00;
+}
+
+.foo5 {
+  color: #f00;
+}
+
+.foo-5 {
+  color: #f00;
+}
+
+.foo--5 {
+  color: #f00;
+}
+
+.foo-bar {
+  color: #f00;
+}
+
+.foo--bar {
+  color: #f00;
+}
+
+.foo-bar-5 {
+  color: #f00;
+}
+
+.foo-bar-baz {
+  color: #f00;
+}
+
+.foo-bar--baz {
+  color: #f00;
+}
+
+.foo-bar-baz--qux {
+  color: #f00;
+}
+
+.foo-bar--baz--qux {
+  color: #f00;
+}
+
+.foo--bar--baz--qux {
+  color: #f00;
+}
+
+.u-hidden {
+  color: #f00;
+}
+
+.u-class-name {
+  color: #f00;
+}
+
+.is-stateclass {
+  color: #f00;
+}
+
+.has-state-class {
+  color: #f00;
+}
+
+.js-dependantclass {
+  color: #f00;
+}
+
+.namespace-u-text-center {
+  color: #f00;
+}
+
+.namespace-u-sm-size11of12 {
+  color: #f00;
+}
+
+.u-foobar17 {
+  color: #f00;
+}
+
+.u-16by9 {
+  color: #f00;
+}
+
 // Shorthand test
 .shorthand {
   margin: 1px;

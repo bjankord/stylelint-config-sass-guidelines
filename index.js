@@ -68,7 +68,7 @@ module.exports = {
     "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
     "scss/selector-no-redundant-nesting-selector": true,
     "selector-class-pattern": [
-      "^(?:u|is|has)-[a-z][a-zA-Z0-9]*$|^(?!u|is|has)[a-zA-Z][a-zA-Z0-9]*(?:-[a-z][a-zA-Z0-9]*)?(?:--[a-z][a-zA-Z0-9]*)?$",
+      "^[a-z0-9\\-]+$",
       {
         "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)"
       }

@@ -1,3 +1,7 @@
+# 1.1.1
+
+- Fixed: Regex for selector-class-pattern now matches lowercase with hyphens correctly
+
 # 1.1.0
 
 - Added: `scss/dollar-variable-colon-space-after` rule
