@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "stylelint-order": "^0.2.2",
-    "stylelint-scss": "^1.3.4",
+    "stylelint-scss": "^1.4.1",
     "stylelint-selector-no-utility": "^1.1.0"
   },
   "devDependencies": {
