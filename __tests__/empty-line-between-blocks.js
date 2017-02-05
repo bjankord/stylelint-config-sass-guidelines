@@ -27,8 +27,8 @@ test("Empty line between scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 2, "flags 2 warning")
-    t.is(result.warnings()[0].text, "Expected empty line before nested rule (rule-nested-empty-line-before)", "correct warning text")
-    t.is(result.warnings()[1].text, "Expected empty line before non-nested rule (rule-non-nested-empty-line-before)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected empty line before rule (rule-empty-line-before)", "correct warning text")
+    t.is(result.warnings()[1].text, "Expected empty line before rule (rule-empty-line-before)", "correct warning text")
   }
 })
 
