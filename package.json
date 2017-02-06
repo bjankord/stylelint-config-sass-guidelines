@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sass-guidelines",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Sharable stylelint config based on https://sass-guidelin.es/",
   "keywords": [
     "stylelint",
@@ -25,7 +25,8 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-scss": "^1.3.4",
+    "stylelint-order": "^0.2.2",
+    "stylelint-scss": "^1.4.1",
     "stylelint-selector-no-utility": "^1.1.0"
   },
   "devDependencies": {
@@ -36,7 +37,7 @@
     "nyc": "^7.0.0",
     "rename-files": "0.0.2",
     "replace": "^0.3.0",
-    "stylelint": "^7.1.0",
+    "stylelint": "^7.8.0",
     "tape": "^4.2.0"
   },
   "scripts": {
