@@ -25,7 +25,7 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^0.2.2",
+    "stylelint-order": "^0.4.3",
     "stylelint-scss": "^1.4.1",
     "stylelint-selector-no-utility": "^1.1.0"
   },
@@ -53,7 +53,7 @@
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
     "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
     "tape": "babel-tape-runner '__tests__/**/*.js'",
-    "test": "nyc npm run tape"
+    "test": "npm run build && nyc npm run tape"
   },
   "babel": {
     "presets": [
