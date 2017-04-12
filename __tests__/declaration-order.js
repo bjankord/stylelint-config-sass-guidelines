@@ -30,7 +30,7 @@ test("Declaration order scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Expected background-color to come before color (order/declaration-block-properties-alphabetical-order)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected background-color to come before color (order/properties-alphabetical-order)", "correct warning text")
   }
 })
 

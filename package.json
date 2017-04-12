@@ -53,7 +53,7 @@
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
     "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
     "tape": "babel-tape-runner '__tests__/**/*.js'",
-    "test": "nyc npm run tape"
+    "test": "npm run build && nyc npm run tape"
   },
   "babel": {
     "presets": [
