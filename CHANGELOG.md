@@ -1,3 +1,7 @@
+# 2.1.0
+- Update: Bumped up `stylelint-order` to v0.4.3
+- Fix: Replaced deprecated `order/declaration-block-properties-alphabetical-order` rule with `order/properties-alphabetical-order` rule
+
 # 2.0.0
 - Addition: `stylelint-order` plugin
 - Removal: `stylelint-disable-reason` rule. This rule has been deprecated in stylelint 7.8 and in 8.0 will be removed. See stylelint CHANGELOG: https://stylelint.io/CHANGELOG/#780
