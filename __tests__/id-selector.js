@@ -21,7 +21,7 @@ test("ID selector scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Unexpected id selector (selector-no-id)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected \"#id-selector\" to have no more than 0 id selectors (selector-max-id)", "correct warning text")
   }
 })
 

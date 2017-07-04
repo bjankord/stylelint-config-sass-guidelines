@@ -25,7 +25,7 @@ test("Single line per property scss", t => {
     t.equal(result.warnings().length, 3, "flags 3 warning")
     t.is(result.warnings()[0].text, "Expected newline after \";\" (declaration-block-semicolon-newline-after)", "correct warning text")
     t.is(result.warnings()[1].text, "Expected newline after \";\" (declaration-block-semicolon-newline-after)", "correct warning text")
-    t.is(result.warnings()[2].text, "Expected no more than 1 declaration(s) (declaration-block-single-line-max-declarations)", "correct warning text")
+    t.is(result.warnings()[2].text, "Expected no more than 1 declaration (declaration-block-single-line-max-declarations)", "correct warning text")
   }
 })
 
