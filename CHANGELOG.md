@@ -1,3 +1,7 @@
+# 2.2.0
+- Update: Bumped up `stylelint` to v7.12.0
+- Fix: Replaced deprecated `selector-no-id` rule with `selector-max-id` rule
+
 # 2.1.0
 - Update: Bumped up `stylelint-order` to v0.4.3
 - Fix: Replaced deprecated `order/declaration-block-properties-alphabetical-order` rule with `order/properties-alphabetical-order` rule
