@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sass-guidelines",
-  "version": "2.2.0",
+  "version": "3.0.0-rc.1",
   "description": "Sharable stylelint config based on https://sass-guidelin.es/",
   "keywords": [
     "stylelint",
@@ -26,8 +26,7 @@
   ],
   "dependencies": {
     "stylelint-order": "^0.6.0",
-    "stylelint-scss": "^1.4.1",
-    "stylelint-selector-no-utility": "^1.1.0"
+    "stylelint-scss": "^1.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.1.18",
