@@ -48,9 +48,8 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 
 ### Plugins
 
+* [`stylelint-order`](https://github.com/hudochenkov/stylelint-order): A plugin pack of order related linting rules for stylelint.
 * [`stylelint-scss`](https://github.com/kristerkari/stylelint-scss): A collection of SCSS specific linting rules for stylelint
-* [`scss/selector-no-redundant-nesting-selector`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md): Disallow redundant nesting selectors (`&`).
-* [`stylelint-selector-no-utility`](https://github.com/primer/stylelint-selector-no-utility): Stylelint rule that doesn't allow the styling of utility classes in CSS
 
 ### Configured lints
 
