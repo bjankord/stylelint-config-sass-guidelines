@@ -37,7 +37,7 @@
     "nyc": "^11.0.3",
     "rename-files": "0.0.2",
     "replace": "^0.3.0",
-    "stylelint": "^7.12.0",
+    "stylelint": "^8.0.0",
     "tape": "^4.2.0"
   },
   "scripts": {
