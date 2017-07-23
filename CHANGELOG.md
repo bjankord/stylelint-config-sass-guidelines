@@ -1,3 +1,6 @@
+# 3.0.1
+- Update: Update copyright years in license
+
 # 3.0.0
 - Addition: Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
 - Update: Bumped up `stylelint` to v8.0.0
