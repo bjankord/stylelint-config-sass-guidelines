@@ -1,3 +1,9 @@
+# 3.0.0
+- Addition: Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
+- Update: Bumped up `stylelint` to v8.0.0
+- Update: Bumped up `stylelint-order` to v0.6.0
+- Removal: Removed unused `stylelint-selector-no-utility` dependency from package.json
+
 # 3.0.0-rc.1
 - Addition: Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
 - Update: Bumped up `stylelint` to v8.0.0
