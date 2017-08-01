@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sass-guidelines",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Sharable stylelint config based on https://sass-guidelin.es/",
   "keywords": [
     "stylelint",
