@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "stylelint-order": "^0.6.0",
-    "stylelint-scss": "^1.4.1"
+    "stylelint-scss": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.1.18",
