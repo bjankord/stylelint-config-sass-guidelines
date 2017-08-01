@@ -1,3 +1,6 @@
+# 3.1.0
+- Update: Bumped up `stylelint-scss` to v2.0.0
+
 # 3.0.1
 - Update: Update copyright years in license
 
