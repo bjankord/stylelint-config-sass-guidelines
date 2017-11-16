@@ -1,8 +1,5 @@
 {
-  "plugins": [
-    "stylelint-order",
-    "stylelint-scss"
-  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
   "rules": {
     "at-rule-blacklist": ["debug"],
     "at-rule-no-vendor-prefix": true,
@@ -21,9 +18,7 @@
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
     "declaration-property-value-blacklist": {
-      "/^border/": [
-        "none"
-      ]
+      "/^border/": ["none"]
     },
     "function-comma-space-after": "always-single-line",
     "function-parentheses-space-inside": "never",
@@ -36,18 +31,48 @@
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
+    "order/order": [
+      [
+        "custom-properties",
+        "dollar-variables",
+        {
+          "type": "at-rule",
+          "name": "extend"
+        },
+        {
+          "type": "at-rule",
+          "name": "include",
+          "hasBlock": false
+        },
+        "declarations",
+        {
+          "type": "at-rule",
+          "hasBlock": true
+        },
+        {
+          "type": "at-rule",
+          "name": "include",
+          "hasBlock": true
+        },
+        {
+          "type": "rule",
+          "selector": "/^&:\\w/"
+        },
+        {
+          "type": "rule",
+          "selector": "/^&::\\w/"
+        },
+        "rules"
+      ]
+    ],
     "order/properties-alphabetical-order": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": [
-          "first-nested"
-        ],
-        "ignore": [
-          "after-comment"
-        ]
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
       }
     ],
     "scss/at-extend-no-missing-placeholder": true,
@@ -63,7 +88,8 @@
     "selector-class-pattern": [
       "^[a-z0-9\\-]+$",
       {
-        "message": "Selector should be written in lowercase with hyphens (selector-class-pattern)"
+        "message":
+          "Selector should be written in lowercase with hyphens (selector-class-pattern)"
       }
     ],
     "selector-list-comma-newline-after": "always",
