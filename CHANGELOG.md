@@ -1,5 +1,6 @@
-# 3.1.0
-- Update: Bumped up `stylelint-scss` to v2.0.0
+# 4.0.0
+- Addition: Added rules & tests for declaration-order [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/15)
+- Update: Moved stylelint, stylelint-scss, stylelint-order to peerDependencies / devDependencies [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/17/files)
 
 # 3.0.1
 - Update: Update copyright years in license
