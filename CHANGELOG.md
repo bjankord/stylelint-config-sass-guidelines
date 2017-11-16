@@ -1,3 +1,8 @@
+# 4.0.1
+- Removal: Removed `{"type": "at-rule", "hasBlock": true }` from order rule. Causes issues with `@media` queries and `@for` loops
+- Removal: Removed `{"type": "rule", "selector": "/^&:\\w/"},` from order rule.
+- Removal: Removed `{"type": "rule", "selector": "/^&::\\w/"},` from order rule.
+
 # 4.0.0
 - Addition: Added rules & tests for declaration-order [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/15)
 - Update: Moved stylelint, stylelint-scss, stylelint-order to peerDependencies / devDependencies [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/17/files)

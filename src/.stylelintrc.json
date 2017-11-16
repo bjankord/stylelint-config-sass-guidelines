@@ -47,20 +47,8 @@
         "declarations",
         {
           "type": "at-rule",
-          "hasBlock": true
-        },
-        {
-          "type": "at-rule",
           "name": "include",
           "hasBlock": true
-        },
-        {
-          "type": "rule",
-          "selector": "/^&:\\w/"
-        },
-        {
-          "type": "rule",
-          "selector": "/^&::\\w/"
         },
         "rules"
       ]
