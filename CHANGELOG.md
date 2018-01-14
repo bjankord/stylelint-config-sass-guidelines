@@ -1,3 +1,7 @@
+# 4.1.0
+- Update: Bumped up `stylelint-order` to v0.8.0
+- Fix: Border zero rule. Issue [16](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/16)
+
 # 4.0.1
 - Removal: Removed `{"type": "at-rule", "hasBlock": true }` from order rule. Causes issues with `@media` queries and `@for` loops
 - Removal: Removed `{"type": "rule", "selector": "/^&:\\w/"},` from order rule.
