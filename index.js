@@ -18,7 +18,11 @@ module.exports = {
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
     "declaration-property-value-blacklist": {
-      "/^border/": ["none"]
+      "border": ["none"],
+      "border-top": ["none"],
+      "border-right": ["none"],
+      "border-bottom": ["none"],
+      "border-left": ["none"]
     },
     "function-comma-space-after": "always-single-line",
     "function-parentheses-space-inside": "never",
