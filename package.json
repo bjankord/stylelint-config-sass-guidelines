@@ -38,7 +38,7 @@
     "rename-files": "0.0.2",
     "replace": "^0.3.0",
     "stylelint": "^8.0.0",
-    "stylelint-order": "^0.7.0",
+    "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.0.0",
     "tape": "^4.2.0"
   },
