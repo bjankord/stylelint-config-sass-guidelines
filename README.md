@@ -106,7 +106,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 * [`indentation`](http://stylelint.io/user-guide/rules/indentation/): Indentation should always be `2` spaces.
 * [`length-zero-no-unit`](http://stylelint.io/user-guide/rules/length-zero-no-unit/): Disallow units for zero lengths.
-* [`max-nesting-depth`](http://stylelint.io/user-guide/rules/max-nesting-depth/): Limit the allowed nesting depth to `1`.
+* [`max-nesting-depth`](http://stylelint.io/user-guide/rules/max-nesting-depth/): Limit the allowed nesting depth to `1`. _Ignore_: Nested at-rules `@media`, `@supports`, and `@include`.
 * [`no-missing-eof-newline`](http://stylelint.io/user-guide/rules/no-missing-eof-newline/): Disallow missing end-of-file newlines in non-empty files.
 
 #### Media Feature
