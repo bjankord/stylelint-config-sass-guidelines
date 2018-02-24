@@ -24,6 +24,9 @@
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">=6"
+  },
   "peerDependencies": {
     "stylelint": ">=8.0.0",
     "stylelint-order": ">=0.7.0",
