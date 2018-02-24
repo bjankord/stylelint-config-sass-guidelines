@@ -29,7 +29,16 @@
     "function-url-quotes": "always",
     "indentation": 2,
     "length-zero-no-unit": true,
-    "max-nesting-depth": 1,
+    "max-nesting-depth": [
+      1,
+      {
+        "ignoreAtRules": [
+          "media",
+          "supports",
+          "include"
+        ]
+      }
+    ],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-parentheses-space-inside": "never",
     "no-missing-end-of-source-newline": true,
