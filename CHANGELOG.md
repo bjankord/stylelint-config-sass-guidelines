@@ -1,3 +1,6 @@
+# 4.2.0
+- Add "ignore" options to "max-nesting-depth" rule (fixes [#25](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/25)) [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/26)
+
 # 4.1.0
 - Update: Bumped up `stylelint-order` to v0.8.0
 - Fix: Border zero rule. Issue [16](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/16)
