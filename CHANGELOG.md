@@ -1,91 +1,147 @@
-# 4.2.0
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Added
+
+### Changed
+- Bumped up `stylelint` peer/dev dependency to v9.0.0
+- Added stylelint-scss and stylelint-order as dependencies [#22](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/22)
+- Node.js 6.x or greater is now required [#24](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/24))
+
+## [4.2.0]
+### Added
 - Add "ignore" options to "max-nesting-depth" rule (fixes [#25](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/25)) [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/26)
 
-# 4.1.0
-- Update: Bumped up `stylelint-order` to v0.8.0
-- Fix: Border zero rule. Issue [16](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/16)
+## [4.1.0]
+### Changed
+- Bumped up `stylelint-order` to v0.8.0
 
-# 4.0.1
-- Removal: Removed `{"type": "at-rule", "hasBlock": true }` from order rule. Causes issues with `@media` queries and `@for` loops
-- Removal: Removed `{"type": "rule", "selector": "/^&:\\w/"},` from order rule.
-- Removal: Removed `{"type": "rule", "selector": "/^&::\\w/"},` from order rule.
+### Fixed
+- Fixed border zero rule. Issue [16](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/16)
 
-# 4.0.0
-- Addition: Added rules & tests for declaration-order [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/15)
-- Update: Moved stylelint, stylelint-scss, stylelint-order to peerDependencies / devDependencies [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/17/files)
+## [4.0.1]
+### Removed
+- Removed `{"type": "at-rule", "hasBlock": true }` from order rule. Causes issues with `@media` queries and `@for` loops
+- Removed `{"type": "rule", "selector": "/^&:\\w/"},` from order rule.
+- Removed `{"type": "rule", "selector": "/^&::\\w/"},` from order rule.
 
-# 3.0.1
-- Update: Update copyright years in license
+## [4.0.0]
+### Added
+- Add rules & tests for declaration-order [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/15)
 
-# 3.0.0
-- Addition: Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
-- Update: Bumped up `stylelint` to v8.0.0
-- Update: Bumped up `stylelint-order` to v0.6.0
-- Removal: Removed unused `stylelint-selector-no-utility` dependency from package.json
+### Changed
+- Moved stylelint, stylelint-scss, stylelint-order to peerDependencies / devDependencies [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/17/files)
 
-# 3.0.0-rc.1
-- Addition: Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
-- Update: Bumped up `stylelint` to v8.0.0
-- Update: Bumped up `stylelint-order` to v0.6.0
-- Removal: Removed unused `stylelint-selector-no-utility` dependency from package.json
+## [3.0.1]
+### Changed
+- Update copyright years in license
 
-# 2.2.0
-- Update: Bumped up `stylelint` to v7.12.0
-- Fix: Replaced deprecated `selector-no-id` rule with `selector-max-id` rule
+## [3.0.0]
+### Added
+- Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
 
-# 2.1.0
-- Update: Bumped up `stylelint-order` to v0.4.3
-- Fix: Replaced deprecated `order/declaration-block-properties-alphabetical-order` rule with `order/properties-alphabetical-order` rule
+### Changed
+- Bumped up `stylelint` to v8.0.0
+- Bumped up `stylelint-order` to v0.6.0
 
-# 2.0.0
-- Addition: `stylelint-order` plugin
-- Removal: `stylelint-disable-reason` rule. This rule has been deprecated in stylelint 7.8 and in 8.0 will be removed. See stylelint CHANGELOG: https://stylelint.io/CHANGELOG/#780
-- Fix: Replaced deprecated `declaration-block-properties-order` rule with `order/declaration-block-properties-alphabetical-order` rule
-- Fix: Replaced deprecated `rule-nested-empty-line-before` rule with `rule-empty-line-before` rule
-- Fix: Replaced deprecated `rule-non-nested-empty-line-before` rule with `rule-empty-line-before` rule
-- Update: Bumped up `stylelint` to v7.8.0
-- Update: Bumped up `stylelint-scss` to v1.4.1
+### Removed
+- Removed unused `stylelint-selector-no-utility` dependency from package.json
 
-# 1.1.1
+## [3.0.0-rc.1]
+### Added
+- Added [greenkeeper](https://greenkeeper.io/) to help keep dependencies up to date
 
-- Fix: Regex for selector-class-pattern now matches lowercase with hyphens correctly
-- Fix: Updated test for url-quotes.js to match updated error text
+### Changed
+- Bumped up `stylelint` to v8.0.0
+- Bumped up `stylelint-order` to v0.6.0
 
-# 1.1.0
+### Removed
+- Removed unused `stylelint-selector-no-utility` dependency from package.json
 
-- Addition: `scss/dollar-variable-colon-space-after` rule
-- Addition: `scss/dollar-variable-colon-space-before` rule
-- Update: Bumped up `stylelint` to v7.1.0
-- Update: Bumped up `stylelint-scss` to v1.3.4
+## [2.2.0]
+### Changed
+- Bumped up `stylelint` to v7.12.0
 
-# 1.0.0
+### Fixed
+- Replaced deprecated `selector-no-id` rule with `selector-max-id` rule
 
-- Addition: `stylelint-disable-reason` rule
-- Addition: `property-no-unknown` rule
-- Addition: `media-feature-parentheses-space-inside` rule
-- Addition: `no-missing-end-of-source-newline` rule
-- Removal: `no-missing-eof-newline `rule
-- Removal: `function-calc-no-unspaced-operator` rule
-- Update: Bumped up `stylelint` to v7.0.2
-- Update: Bumped up `stylelint-scss` to v1.2.1
+## [2.1.0]
+### Changed
+- Bumped up `stylelint-order` to v0.4.3
 
-# 0.2.0
+### Fixed
+- Replaced deprecated `order/declaration-block-properties-alphabetical-order` rule with `order/properties-alphabetical-order` rule
 
-- Addition: `function-parentheses-space-inside` rule
-- Addition: `scss/at-import-partial-extension-blacklist` rule
-- Addition: `declaration-block-properties-order` rule
-- Addition: `selector-no-vendor-prefix` rule
-- Addition: `media-feature-name-no-vendor-prefix` rule
-- Addition: `at-rule-no-vendor-prefix` rule
-- Fix: Sorted stylelint rules alphabetically in config
-- Fix: `max-nesting-depth` rule set to 1 to match Sass Guidelines NestingDepth max_depth: 1 rule
-- Fix: Cleaned up comments in `failing-test-case.scss`
-- Fix: Declaration order now sorted alphabetically in `passing-test-case.scss`
-- Fix: Updated tests to account for new rules
-- Removal: `block-closing-brace-newline-after` rule
-- Removal: `no-extra-semicolons` rule
-- Removal: `string-no-newline` rule
+## [2.0.0]
+### Added
+- Added `stylelint-order` plugin
 
-# 0.1.0
+### Changed
+- Bumped up `stylelint` to v7.8.0
+- Bumped up `stylelint-scss` to v1.4.1
 
+### Fixed
+- Replaced deprecated `declaration-block-properties-order` rule with `order/declaration-block-properties-alphabetical-order` rule
+- Replaced deprecated `rule-nested-empty-line-before` rule with `rule-empty-line-before` rule
+- Replaced deprecated `rule-non-nested-empty-line-before` rule with `rule-empty-line-before` rule
+
+### Removed
+- `stylelint-disable-reason` rule. This rule has been deprecated in stylelint 7.8 and in 8.0 will be removed. See stylelint CHANGELOG: https://stylelint.io/CHANGELOG/#780
+
+## [1.1.1]
+### Fixed
+- Regex for selector-class-pattern now matches lowercase with hyphens correctly
+- Updated test for url-quotes.js to match updated error text
+
+## [1.1.0]
+### Added
+- `scss/dollar-variable-colon-space-after` rule
+- `scss/dollar-variable-colon-space-before` rule
+
+### Changed
+- Bumped up `stylelint` to v7.1.0
+- Bumped up `stylelint-scss` to v1.3.4
+
+## [1.0.0]
+### Added
+- `stylelint-disable-reason` rule
+- `property-no-unknown` rule
+- `media-feature-parentheses-space-inside` rule
+- `no-missing-end-of-source-newline` rule
+
+### Changed
+- Bumped up `stylelint` to v7.0.2
+- Bumped up `stylelint-scss` to v1.2.1
+
+### Removed
+- `no-missing-eof-newline `rule
+- `function-calc-no-unspaced-operator` rule
+
+## [0.2.0]
+### Added
+- `function-parentheses-space-inside` rule
+- `scss/at-import-partial-extension-blacklist` rule
+- `declaration-block-properties-order` rule
+- `selector-no-vendor-prefix` rule
+- `media-feature-name-no-vendor-prefix` rule
+- `at-rule-no-vendor-prefix` rule
+
+### Fixed
+- Sorted stylelint rules alphabetically in config
+- `max-nesting-depth` rule set to 1 to match Sass Guidelines NestingDepth max_depth: 1 rule
+- Cleaned up comments in `failing-test-case.scss`
+- Declaration order now sorted alphabetically in `passing-test-case.scss`
+- Updated tests to account for new rules
+
+### Removed
+- `block-closing-brace-newline-after` rule
+- `no-extra-semicolons` rule
+- `string-no-newline` rule
+
+## [0.1.0]
+### Added
 - Initial release
