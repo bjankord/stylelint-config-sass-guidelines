@@ -1,5 +1,5 @@
 module.exports = {
- "plugins": ["stylelint-order", "stylelint-scss"],
+  "plugins": ["stylelint-order", "stylelint-scss"],
   "rules": {
     "at-rule-blacklist": ["debug"],
     "at-rule-no-vendor-prefix": true,
