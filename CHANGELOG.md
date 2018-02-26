@@ -4,8 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [5.0.0]
 ### Added
+- Added scss/at-rule-no-unknown rule [#18](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/18)
 
 ### Changed
 - Bumped up `stylelint` peer/dev dependency to v9.0.0
