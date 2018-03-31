@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.0.0"
+    "stylelint-scss": "^3.0.0"
   },
   "peerDependencies": {
     "stylelint": "^9.0.0"
