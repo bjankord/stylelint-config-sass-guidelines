@@ -26,8 +26,18 @@ const invalidScss = `
 }
 `
 
-test("Nesting depth scss", t => {
-  t.plan(5)
+const validScss = `
+.button {
+  @each $key, $value in $colors {
+    &-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+`
+
+test.only("Nesting depth scss", t => {
+  t.plan(6)
 
   postcss()
     .use(stylelint({ code: invalidScss, config: config }))
@@ -62,6 +72,17 @@ test("Nesting depth scss", t => {
       "correct warning text"
     )
   }
+
+  postcss()
+    .use(stylelint({ code: validScss, config: config }))
+    .process(validScss, { syntax: scssSyntax })
+    .then(function(result) {
+      t.is(
+        result.warnings().length,
+        0
+      )
+    })
+    .catch(logError)
 })
 
 function logError(err) {
