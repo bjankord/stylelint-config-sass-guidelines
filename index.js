@@ -34,6 +34,7 @@ module.exports = {
       1,
       {
         "ignoreAtRules": [
+          "each",
           "media",
           "supports",
           "include"
