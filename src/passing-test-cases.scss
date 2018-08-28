@@ -107,6 +107,19 @@ $my-var: 10px;
   color: #f00;
 }
 
+// Nesting Depth test
+$colors: (
+  white: #fff
+);
+
+.button {
+  @each $key, $value in $colors {
+    &-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
 // Private Naming Convention test
 // Enforces that functions, mixins, and variables that follow the private naming convention (default to underscore-prefixed, e.g. $_foo) are defined and used within the same file.
 
