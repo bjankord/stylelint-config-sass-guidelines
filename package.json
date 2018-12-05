@@ -28,8 +28,8 @@
     "node": ">=6"
   },
   "dependencies": {
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.0.0"
+    "stylelint-order": ">=1.0.0",
+    "stylelint-scss": "^3.4.0"
   },
   "peerDependencies": {
     "stylelint": "^9.0.0"
