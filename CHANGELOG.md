@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [5.3.0]
 ### Changed
-- Updated `stylelint-order` dependency range to pull in 1.x or 2.x versions. Both major versions are compatible.
-- Updated up `stylelint-scss` dependency to pull minimum of 3.4.0 [PR]
+- Updated `stylelint-order` dependency range to pull in 1.x or 2.x versions. Both major versions are compatible. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/41)
+- Updated up `stylelint-scss` dependency to pull minimum of 3.4.0 [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/41)
 
 ## [5.2.0]
 ### Changed
