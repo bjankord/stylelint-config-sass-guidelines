@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [5.4.0]
+### Fixed
+- Fix patterns for variables like "$x1". [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/43)
+
+### Changed
+- Ignore all @-rules in max-nesting-depth. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/45)
+
 ## [5.3.0]
 ### Changed
 - Updated `stylelint-order` dependency range to pull in 1.x or 2.x versions. Both major versions are compatible. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/41)
