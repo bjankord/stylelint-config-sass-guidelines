@@ -33,12 +33,7 @@ module.exports = {
     "max-nesting-depth": [
       1,
       {
-        "ignoreAtRules": [
-          "each",
-          "media",
-          "supports",
-          "include"
-        ]
+        "ignoreAtRules": [/.*/]
       }
     ],
     "media-feature-name-no-vendor-prefix": true,
