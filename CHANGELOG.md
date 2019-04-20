@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [6.0.0]
+### Changed
+- Bumped up `stylelint` peer/dev dependency to `^10.0.1`
+- Bumped up `stylelint-order` dependency to `^3.0.0`
+- Node.js 8.7.0 or greater is now required
+
 ## [5.4.0]
 ### Fixed
 - Fix patterns for variables like "$x1". [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/43)
