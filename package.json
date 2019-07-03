@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.4.0"
+    "stylelint-scss": "^3.4.0",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "stylelint": "^10.0.1"
@@ -54,11 +55,14 @@
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
     "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
     "tape": "babel-tape-runner \"__tests__/**/*.js\"",
-    "test": "npm run build && npm run tape"
+    "test": "npm run build && npm run tape",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
       "@babel/preset-env"
     ]
-  }
+  },
+  "snyk": true
 }
