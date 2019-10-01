@@ -13,6 +13,10 @@
 
 A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/)
 
+# Translations
+
+* [Deutsch](page/de)
+
 ## Installation
 
 ```console
