@@ -15,7 +15,7 @@ A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/)
 
 # Translations
 
-* [Deutsch](page/de)
+* [Deutsch](page/de.md)
 
 ## Installation
 

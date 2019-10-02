@@ -13,7 +13,7 @@
 
 Diese Konfiguration basiert auf [sass-guidelin.es](https://sass-guidelin.es/)
 
-Zurück zur [englischen Version](../README)
+Zurück zur [englischen Version](../README.md)
 
 # Installation
 
