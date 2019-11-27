@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [6.2.0]
 ### Changed
-- Updated stylelint peerDependency range from `^10.0.1 || ^11.0.0` to `^10.0.1 || ^11.0.0 || ^12.0.0`
+- Updated stylelint peerDependency range from `^10.0.1 || ^11.0.0` to `^10.0.1 || ^11.0.0 || ^12.0.0` to include stylelinet 12
 
 ## [6.1.0]
 ### Changed
