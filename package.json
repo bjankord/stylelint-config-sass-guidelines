@@ -28,7 +28,7 @@
     "node": ">=8.7.0"
   },
   "dependencies": {
-    "stylelint-order": "^3.0.0",
+    "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.4.0"
   },
   "peerDependencies": {
