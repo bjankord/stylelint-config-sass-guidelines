@@ -32,22 +32,22 @@ test('Declaration order scss', t => {
     t.equal(result.warnings().length, 4, 'flags 4 warnings')
     t.is(
       result.warnings()[0].text,
-      'Expected background-color to come before color (order/properties-alphabetical-order)',
-      'correct warning text',
-    )
-    t.is(
-      result.warnings()[1].text,
       'Expected declaration to come before rule (order/order)',
       'correct warning text',
     )
     t.is(
-      result.warnings()[2].text,
+      result.warnings()[1].text,
       'Expected blockless @include to come before declaration (order/order)',
       'correct warning text',
     )
     t.is(
-      result.warnings()[3].text,
+      result.warnings()[2].text,
       'Expected @extend to come before blockless @include (order/order)',
+      'correct warning text',
+    )
+    t.is(
+      result.warnings()[3].text,
+      'Expected background-color to come before color (order/properties-alphabetical-order)',
       'correct warning text',
     )
   }
