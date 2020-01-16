@@ -36,8 +36,8 @@ const validScss = `
 }
 `
 
-test.only("Nesting depth scss", t => {
-  t.plan(6)
+test("Nesting depth scss", t => {
+  t.plan(5)
 
   postcss()
     .use(stylelint({ code: invalidScss, config: config }))
@@ -64,12 +64,6 @@ test.only("Nesting depth scss", t => {
       result.warnings()[2].node.type,
       "atrule",
       "max-depth ignores at-rules"
-    )
-
-    t.is(
-      result.warnings()[2].text,
-      'Expected ".one .two .three .four" to have no more than 3 compound selectors (selector-max-compound-selectors)',
-      "correct warning text"
     )
   }
 
