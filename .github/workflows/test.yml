@@ -13,7 +13,7 @@ jobs:
       matrix:
         # switch to `8` when https://github.com/actions/setup-node/issues/27 is fixed
         node: [8.16.2, 10, 12]
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
 
     steps:
       - name: Clone repository
