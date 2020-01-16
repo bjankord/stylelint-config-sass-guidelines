@@ -21,7 +21,7 @@ $myVar: 10px;
 `)
 
 test("Name format scss", t => {
-  t.plan(5)
+  t.plan(4)
 
   postcss()
     .use(stylelint({ code: invalidScss, config: config,}))
@@ -34,7 +34,6 @@ test("Name format scss", t => {
     t.is(result.warnings()[0].text, "Expected @function name to match specified pattern (scss/at-function-pattern)", "correct warning text")
     t.is(result.warnings()[1].text, "Expected @mixin name to match specified pattern (scss/at-mixin-pattern)", "correct warning text")
     t.is(result.warnings()[2].text, "Expected $ variable name to match specified pattern (scss/dollar-variable-pattern)", "correct warning text")
-    t.is(result.warnings()[3].text, "Expected %-placeholder \"%placeHolder\" to match specified pattern (scss/percent-placeholder-pattern)", "correct warning text")
   }
 })
 
