@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.4.0"
+    "stylelint-scss": "kristerkari/stylelint-scss#stylelint-13"
   },
   "peerDependencies": {
     "stylelint": "^13.0.0"
