@@ -31,9 +31,22 @@ test("Name format scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 3, "flags 3 warning")
-    t.is(result.warnings()[0].text, "Expected @function name to match specified pattern (scss/at-function-pattern)", "correct warning text")
-    t.is(result.warnings()[1].text, "Expected @mixin name to match specified pattern (scss/at-mixin-pattern)", "correct warning text")
-    t.is(result.warnings()[2].text, "Expected $ variable name to match specified pattern (scss/dollar-variable-pattern)", "correct warning text")
+    var warningsArray = Object.values(result.warnings()).map(x => x.text);
+    t.is(
+      warningsArray.includes('Expected @function name to match specified pattern (scss/at-function-pattern)'),
+      true,
+      '1 correct warning text',
+    )
+    t.is(
+      warningsArray.includes('Expected @mixin name to match specified pattern (scss/at-mixin-pattern)'),
+      true,
+      '2 correct warning text',
+    )
+    t.is(
+      warningsArray.includes('Expected $ variable name to match specified pattern (scss/dollar-variable-pattern)'),
+      true,
+      '3 correct warning text',
+    )
   }
 })
 

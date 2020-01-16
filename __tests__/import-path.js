@@ -12,7 +12,7 @@ const invalidScss = (
 `)
 
 test("Import path scss", t => {
-  t.plan(7)
+  t.plan(3)
 
   postcss()
     .use(stylelint({ code: invalidScss, config: config,}))
@@ -22,12 +22,17 @@ test("Import path scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 6, "flags 6 warning")
-    t.is(result.warnings()[0].text, "Unexpected leading underscore in imported partial name (scss/at-import-no-partial-leading-underscore)", "correct warning text")
-    t.is(result.warnings()[1].text, "Unexpected leading underscore in imported partial name (scss/at-import-no-partial-leading-underscore)", "correct warning text")
-    t.is(result.warnings()[2].text, "Unexpected leading underscore in imported partial name (scss/at-import-no-partial-leading-underscore)", "correct warning text")
-    t.is(result.warnings()[3].text, "Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-blacklist)", "correct warning text")
-    t.is(result.warnings()[4].text, "Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-blacklist)", "correct warning text")
-    t.is(result.warnings()[5].text, "Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-blacklist)", "correct warning text")
+    var warningsArray = Object.values(result.warnings()).map(x => x.text);
+    t.is(
+      warningsArray.includes('Unexpected leading underscore in imported partial name (scss/at-import-no-partial-leading-underscore)'),
+      true,
+      'correct warning text',
+    )
+    t.is(
+      warningsArray.includes('Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-blacklist)'),
+      true,
+      'correct warning text',
+    )
   }
 })
 
