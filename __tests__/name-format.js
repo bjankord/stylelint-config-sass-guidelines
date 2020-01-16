@@ -21,7 +21,7 @@ $myVar: 10px;
 `)
 
 test("Name format scss", t => {
-  t.plan(3)
+  t.plan(4)
 
   postcss()
     .use(stylelint({ code: invalidScss, config: config,}))
