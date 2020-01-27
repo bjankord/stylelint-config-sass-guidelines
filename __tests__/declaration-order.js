@@ -28,26 +28,26 @@ test('Declaration order scss', t => {
     .catch(logError)
 
   function checkResult(result) {
-    console.log(result)
     t.equal(result.warnings().length, 4, 'flags 4 warnings')
+    var warningsArray = Object.values(result.warnings()).map(x => x.text);
     t.is(
-      result.warnings()[0].text,
-      'Expected declaration to come before rule (order/order)',
+      warningsArray.includes('Expected background-color to come before color (order/properties-alphabetical-order)'),
+      true,
       'correct warning text',
     )
     t.is(
-      result.warnings()[1].text,
-      'Expected blockless @include to come before declaration (order/order)',
+      warningsArray.includes('Expected declaration to come before rule (order/order)'),
+      true,
       'correct warning text',
     )
     t.is(
-      result.warnings()[2].text,
-      'Expected @extend to come before blockless @include (order/order)',
+      warningsArray.includes('Expected blockless @include to come before declaration (order/order)'),
+      true,
       'correct warning text',
     )
     t.is(
-      result.warnings()[3].text,
-      'Expected background-color to come before color (order/properties-alphabetical-order)',
+      warningsArray.includes('Expected @extend to come before blockless @include (order/order)'),
+      true,
       'correct warning text',
     )
   }
