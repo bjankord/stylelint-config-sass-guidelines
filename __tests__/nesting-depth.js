@@ -36,7 +36,7 @@ const validScss = `
 }
 `
 
-test.only("Nesting depth scss", t => {
+test("Nesting depth scss", t => {
   t.plan(6)
 
   postcss()

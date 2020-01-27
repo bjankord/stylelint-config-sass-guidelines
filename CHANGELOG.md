@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Changed
+- Update test expectations to not require specific error message order
+
 ## [6.2.0]
 ### Changed
 - Updated stylelint peerDependency range from `^10.0.1 || ^11.0.0` to `^10.0.1 || ^11.0.0 || ^12.0.0` to include stylelinet 12
