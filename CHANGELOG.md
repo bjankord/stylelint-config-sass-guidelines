@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 **Node.js v10 or newer** is required. That's because stylelint v13 itself [doesn't support Node.js versions below 10](https://github.com/stylelint/stylelint/blob/master/CHANGELOG.md#1300).
 
 - Bumped up `stylelint-order` dependency to `^4.0.0`
+- Update test expectations to not require specific error message order
 
 ## [6.2.0]
 ### Changed

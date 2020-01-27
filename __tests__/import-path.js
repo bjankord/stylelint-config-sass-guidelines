@@ -5,7 +5,7 @@ import scssSyntax from "postcss-scss"
 import test from "tape"
 
 const invalidScss = (
-`@import 'foo/_bar.scss';
+  `@import 'foo/_bar.scss';
 @import '_bar.scss';
 @import '_bar';
 @import 'bar.scss';
@@ -15,7 +15,7 @@ test("Import path scss", t => {
   t.plan(3)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config,}))
+    .use(stylelint({ code: invalidScss, config: config, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)
