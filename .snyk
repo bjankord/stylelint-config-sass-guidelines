@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - stylelint-order > lodash:
+        patched: '2020-05-01T14:13:42.282Z'
+    - stylelint-scss > lodash:
+        patched: '2020-05-01T14:13:42.282Z'
+    - stylelint-order > postcss-sorting > lodash:
+        patched: '2020-05-01T14:13:42.282Z'
