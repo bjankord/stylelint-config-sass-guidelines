@@ -9,9 +9,9 @@
 [![devDependency Status](https://david-dm.org/bjankord/stylelint-config-sass-guidelines/dev-status.svg)](https://david-dm.org/bjankord/stylelint-config-sass-guidelines/?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/bjankord/stylelint-config-sass-guidelines/badge.svg)](https://snyk.io//test/github/bjankord/stylelint-config-sass-guidelines)
 
-A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/). 
+A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/).
 
-This linter has been designed / tested with SCSS syntax based on the SCSS guidelines documented in https://sass-guidelin.es/. It is intended for use with SCSS syntax, not Sass (tab style) syntax. 
+This linter has been designed / tested with SCSS syntax based on the SCSS guidelines documented in https://sass-guidelin.es/. It is intended for use with SCSS syntax, not Sass (tab style) syntax.
 
 # Translations
 
@@ -67,7 +67,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### At-rule
 
-* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Specify a blacklist of disallowed at-rules.
+* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Specify a list of disallowed at-rules.
   * `"debug"` Disallow the use of `@debug`.
 * [`at-rule-no-vendor-prefix`](http://stylelint.io/user-guide/rules/at-rule-no-vendor-prefix/): Disallow vendor prefixes for at-rules.
 
@@ -100,8 +100,8 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### Declaration Property
 
-* [`declaration-property-value-blacklist`](http://stylelint.io/user-guide/rules/declaration-property-value-blacklist/): Specify a blacklist of disallowed property and value pairs within declarations.
-  * `^border`: Disallow the use of the word `none` for borders, use `0` instead.
+* [`declaration-property-value-blacklist`](http://stylelint.io/user-guide/rules/declaration-property-value-blacklist/): Specify a list of disallowed property and value pairs within declarations.
+  * `^border`: Disallow the use of the word `none` for borders, use `0` instead. The intent of this rule is to enforce consistency, rather than define which is "better."
 
 #### Function
 
@@ -140,7 +140,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 * [`at-extend-no-missing-placeholder`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Disallow at-extends (`@extend`) with missing placeholders.
 * [`at-function-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS functions must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`at-import-no-partial-leading-underscore`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
-* [`at-import-partial-extension-blacklist`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md): Specify blacklist of disallowed file extensions for partial names in `@import` commands.
+* [`at-import-partial-extension-blacklist`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md): Specify list of disallowed file extensions for partial names in `@import` commands.
   * `.scss`: Disallow the use of the `.scss` file extension in imports.
 * [`at-mixin-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md): SCSS mixins must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`dollar-variable-colon-space-after`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-after/README.md): Require a single space after the colon in $-variable declarations.

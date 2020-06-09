@@ -4,5 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: '11:00'
   open-pull-requests-limit: 10
+  # Increase the version requirement only when required by the new version.
+  # More info: https://help.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#versioning-strategy
+  versioning-strategy: increase-if-necessary

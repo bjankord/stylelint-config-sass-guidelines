@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+### Changed
+- Add dependabot integration to help with keeping dependencies up to date and secure
+
+### Removed
+- Removed unused scss-lint files, these were only used to generate lint errors for comparison with stylelint and did not play a functional role in how this stylelint config worked
+  - Removed unused Gemfile
+  - Removed unused Gemfile.lock
+  - Removed src/.scss-lint.yml
+
+## [7.0.0]
+### Changed
+- Updated stylelint peerDependency range from `^10.0.1 || ^11.0.0 || ^12.0.0` to `^13.0.0`
+
+**Node.js v10 or newer** is required. That's because stylelint v13 itself [doesn't support Node.js versions below 10](https://github.com/stylelint/stylelint/blob/master/CHANGELOG.md#1300).
+
+- Bumped up `stylelint-order` dependency to `^4.0.0`
+- Update test expectations to not require specific error message order
+
 ## [7.0.0]
 ### Changed
 - Updated stylelint peerDependency range from `^10.0.1 || ^11.0.0 || ^12.0.0` to `^13.0.0`
