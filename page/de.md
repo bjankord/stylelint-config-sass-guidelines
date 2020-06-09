@@ -64,7 +64,7 @@ Hier findest du eine Liste mit den voreingestellten Regel und was sie bewirken.
 
 #### At-Regeln
 
-* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Erstellt eine Blacklist für unerwünschte at-Regeln.
+* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Erstellt eine list für unerwünschte at-Regeln.
   * `"debug"` Verbiete das Benutzen von `@debug`.
 * [`at-rule-no-vendor-prefix`](http://stylelint.io/user-guide/rules/at-rule-no-vendor-prefix/): Verbiete fremde Präfixe für at-Regeln.
 
@@ -136,7 +136,7 @@ Hier findest du eine Liste mit den voreingestellten Regel und was sie bewirken.
 * [`at-extend-no-missing-placeholder`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Verbiete at-extends (`@extend`) mit fehlendem Platzhalter.
 * [`at-function-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS Funktionen müssen klein geschrieben werden und diesem Regex entsprechen `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`at-import-no-partial-leading-underscore`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md): Verbiete führende Unterstriche in partiellen Namen bei `@import`.
-* [`at-import-partial-extension-blacklist`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md): Erstellt eine Blacklist von verbotenen Dateiendungen für partiellen name beim importieren.
+* [`at-import-partial-extension-blacklist`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md): Erstellt eine list von verbotenen Dateiendungen für partiellen name beim importieren.
   * `.scss`: Verbiete das Nutzen von `.scss` Dateiendungen beim importieren.
 * [`at-mixin-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md): SCSS Mixins müssen klein geschrieben werden und diesem Regex entsprechen `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`dollar-variable-colon-space-after`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-after/README.md): Benötigt ein Leerzeichen nach dem Doppelpunkt bei der $-variable Deklaration.
