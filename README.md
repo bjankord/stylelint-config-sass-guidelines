@@ -9,7 +9,7 @@
 [![devDependency Status](https://david-dm.org/bjankord/stylelint-config-sass-guidelines/dev-status.svg)](https://david-dm.org/bjankord/stylelint-config-sass-guidelines/?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/bjankord/stylelint-config-sass-guidelines/badge.svg)](https://snyk.io//test/github/bjankord/stylelint-config-sass-guidelines)
 
-A stylelint config based on [sass-guidelin.es](https://sass-guidelin.es/).
+A stylelint config inspired by [sass-guidelin.es](https://sass-guidelin.es/).
 
 This linter has been designed / tested with SCSS syntax based on the SCSS guidelines documented in https://sass-guidelin.es/. It is intended for use with SCSS syntax, not Sass (tab style) syntax.
 
