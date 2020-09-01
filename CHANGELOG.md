@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## Unreleased
 ### Changed
 - Add dependabot integration to help with keeping dependencies up to date and secure
+- Bumped up `stylelint` peer/dev dependency to v13.7.0
+
+### Fixed
+- Replaced deprecated `at-rule-blacklist` rule with `at-rule-disallowed-list` rule
+- Replaced deprecated `declaration-property-value-blacklist` rule with `declaration-property-value-disallowed-list` rule
 
 ### Removed
 - Removed unused scss-lint files, these were only used to generate lint errors for comparison with stylelint and did not play a functional role in how this stylelint config worked

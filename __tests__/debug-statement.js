@@ -24,7 +24,7 @@ test("Debug statement scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Unexpected at-rule \"debug\" (at-rule-blacklist)", "correct warning text")
+    t.is(result.warnings()[0].text, "Unexpected at-rule \"debug\" (at-rule-disallowed-list)", "correct warning text")
   }
 })
 

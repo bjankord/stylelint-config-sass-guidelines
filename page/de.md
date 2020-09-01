@@ -18,7 +18,7 @@ Zurück zur [englischen Version](../README.md)
 # Installation
 
 ```console
-$ npm install --save stylelint-config-sass-guidelines
+$ npm i -D stylelint stylelint-config-sass-guidelines
 ```
 
 ## Konfiguration
@@ -64,7 +64,7 @@ Hier findest du eine Liste mit den voreingestellten Regel und was sie bewirken.
 
 #### At-Regeln
 
-* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Erstellt eine list für unerwünschte at-Regeln.
+* [`at-rule-disallowed-list`](http://stylelint.io/user-guide/rules/at-rule-disallowed-list): Erstellt eine list für unerwünschte at-Regeln.
   * `"debug"` Verbiete das Benutzen von `@debug`.
 * [`at-rule-no-vendor-prefix`](http://stylelint.io/user-guide/rules/at-rule-no-vendor-prefix/): Verbiete fremde Präfixe für at-Regeln.
 
@@ -97,7 +97,7 @@ Hier findest du eine Liste mit den voreingestellten Regel und was sie bewirken.
 
 #### Deklarationseigenschaft
 
-* [`declaration-property-value-blacklist`](http://stylelint.io/user-guide/rules/declaration-property-value-blacklist/): Verbiete bestimmte Eigenschaften- und Werte-Paare in einer Deklaration
+* [`declaration-property-value-disallowed-list`](http://stylelint.io/user-guide/rules/declaration-property-value-disallowed-list): Verbiete bestimmte Eigenschaften- und Werte-Paare in einer Deklaration
   * `^border`: Verbiete das Nutzen von `none` für Borders, nutze `0` lieber.
 
 #### Funktionen

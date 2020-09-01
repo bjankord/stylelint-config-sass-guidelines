@@ -8,7 +8,6 @@ const invalidScss = (
 `.borderzero {
   border: none;
 }
-
 `)
 
 test("Border zero scss", t => {
@@ -22,7 +21,7 @@ test("Border zero scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Unexpected value \"none\" for property \"border\" (declaration-property-value-blacklist)", "correct warning text")
+    t.is(result.warnings()[0].text, "Unexpected value \"none\" for property \"border\" (declaration-property-value-disallowed-list)", "correct warning text")
   }
 })
 

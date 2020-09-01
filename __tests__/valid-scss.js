@@ -12,11 +12,11 @@ const validScss = (
 
 // BEM Depth test
 // scss-lint:disable SelectorFormat
-// stylelint-disable selector-class-pattern
+/* stylelint-disable selector-class-pattern */
 .block__element {
   color: #f00;
 }
-// stylelint-enable selector-class-pattern
+/* stylelint-enable selector-class-pattern */
 // scss-lint:enable SelectorFormat
 
 // Border Zero test
