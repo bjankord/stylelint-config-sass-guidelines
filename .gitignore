@@ -6,3 +6,4 @@ npm-debug.log
 vendor
 coverage
 .nyc_output
+.history

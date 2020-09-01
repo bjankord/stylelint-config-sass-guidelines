@@ -92,11 +92,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/<repo-name>
+   git clone https://github.com/<your-username>/stylelint-config-sass-guidelines
    # Navigate to the newly cloned directory
-   cd <repo-name>
+   cd stylelint-config-sass-guidelines
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/<upstream-owner>/<repo-name>
+   git remote add upstream https://github.com/bjankord/stylelint-config-sass-guidelines
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

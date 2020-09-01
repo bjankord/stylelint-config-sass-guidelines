@@ -7,11 +7,11 @@
 // Have not found a way to test this with stylelint
 // BEM Depth test
 // scss-lint:disable SelectorFormat
-// stylelint-disable selector-class-pattern
+/* stylelint-disable selector-class-pattern */
 .block__element__subelement {
   color: #f00;
 }
-// stylelint-enable selector-class-pattern
+/* stylelint-enable selector-class-pattern */
 // scss-lint:enable SelectorFormat
 
 // Border Zero test

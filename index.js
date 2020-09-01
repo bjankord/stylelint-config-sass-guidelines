@@ -1,7 +1,7 @@
 module.exports = {
   "plugins": ["stylelint-order", "stylelint-scss"],
   "rules": {
-    "at-rule-blacklist": ["debug"],
+    "at-rule-disallowed-list": ["debug"],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "block-no-empty": true,
@@ -18,7 +18,7 @@ module.exports = {
     "declaration-block-trailing-semicolon": "always",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
-    "declaration-property-value-blacklist": {
+    "declaration-property-value-disallowed-list": {
       "border": ["none"],
       "border-top": ["none"],
       "border-right": ["none"],

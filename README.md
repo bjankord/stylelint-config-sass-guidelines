@@ -20,7 +20,7 @@ This linter has been designed / tested with SCSS syntax based on the SCSS guidel
 ## Installation
 
 ```console
-$ npm install --save stylelint-config-sass-guidelines
+$ npm i -D stylelint stylelint-config-sass-guidelines
 ```
 
 ## Usage
@@ -67,7 +67,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### At-rule
 
-* [`at-rule-blacklist`](http://stylelint.io/user-guide/rules/at-rule-blacklist/): Specify a list of disallowed at-rules.
+* [`at-rule-disallowed-list`](https://stylelint.io/user-guide/rules/at-rule-disallowed-list): Specify a list of disallowed at-rules.
   * `"debug"` Disallow the use of `@debug`.
 * [`at-rule-no-vendor-prefix`](http://stylelint.io/user-guide/rules/at-rule-no-vendor-prefix/): Disallow vendor prefixes for at-rules.
 
@@ -100,7 +100,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### Declaration Property
 
-* [`declaration-property-value-blacklist`](http://stylelint.io/user-guide/rules/declaration-property-value-blacklist/): Specify a list of disallowed property and value pairs within declarations.
+* [`declaration-property-value-disallowed-list`](http://stylelint.io/user-guide/rules/declaration-property-value-disallowed-list): Specify a list of disallowed property and value pairs within declarations.
   * `^border`: Disallow the use of the word `none` for borders, use `0` instead. The intent of this rule is to enforce consistency, rather than define which is "better."
 
 #### Function
