@@ -1,4 +1,5 @@
 {
+  "ruleName": "plugin/stylelint-config-sass-guidelines",
   "plugins": ["stylelint-order", "stylelint-scss"],
   "rules": {
     "at-rule-disallowed-list": ["debug"],
