@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sass-guidelines",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "Sharable stylelint config based on https://sass-guidelin.es/",
   "keywords": [
     "stylelint",
@@ -32,14 +32,14 @@
     "stylelint": "^13.7.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "babel-tape-runner": "^3.0.0",
     "prepend-file": "^2.0.0",
     "shelljs": "^0.8.1",
-    "stylelint": "^13.7.0",
-    "tape": "^5.0.1"
+    "stylelint": "^13.9.0",
+    "tape": "^5.1.1"
   },
   "scripts": {
     "build": "node scripts/build.js",
