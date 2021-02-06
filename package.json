@@ -25,11 +25,11 @@
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^4.0.0",
+    "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.7.0"
+    "stylelint": "^13.9.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.13",
@@ -37,7 +37,7 @@
     "@babel/preset-env": "^7.12.13",
     "babel-tape-runner": "^3.0.0",
     "prepend-file": "^2.0.0",
-    "shelljs": "^0.8.1",
+    "shelljs": "^0.8.4",
     "stylelint": "^13.9.0",
     "tape": "^5.1.1"
   },
