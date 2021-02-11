@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Set node engine minimum to version 10.0.0
+- Added node 14 to automated test matrix
+
+### Removed
+- Dropped official support for Node 8
+- Removed node 8 from automated test matrix
+
 ## [7.1.0]
 ### Changed
 - Add dependabot integration to help with keeping dependencies up to date and secure
