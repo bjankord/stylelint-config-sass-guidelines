@@ -11,8 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # switch to `8` when https://github.com/actions/setup-node/issues/27 is fixed
-        node: [8.16.2, 10, 12]
+        node: [10, 12, 14]
         os: [ubuntu-latest]
 
     steps:
@@ -29,6 +28,6 @@ jobs:
 
       - name: Install npm dependencies
         run: npm ci
-        
+
       - name: Run tests
         run: npm run test

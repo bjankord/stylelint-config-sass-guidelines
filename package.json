@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/bjankord/stylelint-config-sass-guidelines/issues"
   },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "main": "index.js",
   "files": [
     "index.js"
