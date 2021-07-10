@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [8.0.1]
+### Added
+- Added node 16 to automated test matrix
+
+### Removed
+- Removed babel as a dev dependency, resolves issue with security vuln in glob-parent CVE-2020-28469
+
 ## [8.0.0]
 ### Added
 - Set node engine minimum to version 10.0.0

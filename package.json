@@ -35,10 +35,6 @@
     "stylelint": "^13.7.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
-    "babel-tape-runner": "^3.0.0",
     "prepend-file": "^2.0.0",
     "shelljs": "^0.8.1",
     "stylelint": "^13.7.0",
@@ -53,7 +49,7 @@
     "scss-lint-passing-case": "cd src; bundle exec scss-lint passing-test-cases.scss -c .scss-lint.yml; exit 0",
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
     "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
-    "tape": "babel-tape-runner \"__tests__/**/*.js\"",
+    "tape": "tape \"__tests__/**/*.js\"",
     "test": "npm run build && npm run tape"
   },
   "babel": {
