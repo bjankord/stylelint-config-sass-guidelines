@@ -1,5 +1,6 @@
 module.exports = {
   "plugins": ["stylelint-order", "stylelint-scss"],
+  "customSyntax": "postcss-scss",
   "rules": {
     "at-rule-disallowed-list": ["debug"],
     "at-rule-no-unknown": null,
