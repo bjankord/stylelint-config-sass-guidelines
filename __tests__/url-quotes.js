@@ -1,8 +1,8 @@
-import config from "../"
-import stylelint from "stylelint"
-import postcss from "postcss"
-import scssSyntax from "postcss-scss"
-import test from "tape"
+const config = require("../index");
+const stylelint = require("stylelint");
+const postcss = require("postcss");
+const scssSyntax = require("postcss-scss");
+const test = require("tape");
 
 const invalidScss = (
 `.quotes-url {
@@ -21,7 +21,7 @@ test("URL quotes scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Expected quotes (function-url-quotes)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected quotes around \"url\" function argument (function-url-quotes)", "correct warning text")
   }
 })
 

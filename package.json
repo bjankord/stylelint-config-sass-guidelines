@@ -21,28 +21,25 @@
     "url": "https://github.com/bjankord/stylelint-config-sass-guidelines/issues"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "dependencies": {
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.18.0"
+    "postcss-scss": "^4.0.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.7.0"
+    "stylelint": "^14.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/preset-env": "^7.11.5",
-    "babel-tape-runner": "^3.0.0",
     "prepend-file": "^2.0.0",
     "shelljs": "^0.8.1",
-    "stylelint": "^13.7.0",
-    "tape": "^5.0.1"
+    "stylelint": "^14.0.0",
+    "tape": "^5.3.1"
   },
   "scripts": {
     "build": "node scripts/build.js",
@@ -53,7 +50,7 @@
     "scss-lint-passing-case": "cd src; bundle exec scss-lint passing-test-cases.scss -c .scss-lint.yml; exit 0",
     "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
     "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
-    "tape": "babel-tape-runner \"__tests__/**/*.js\"",
+    "tape": "tape \"__tests__/**/*.js\"",
     "test": "npm run build && npm run tape"
   },
   "babel": {

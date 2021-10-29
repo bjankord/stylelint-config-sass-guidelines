@@ -1,8 +1,8 @@
-import config from "../"
-import stylelint from "stylelint"
-import postcss from "postcss"
-import scssSyntax from "postcss-scss"
-import test from "tape"
+const config = require("../index");
+const stylelint = require("stylelint");
+const postcss = require("postcss");
+const scssSyntax = require("postcss-scss");
+const test = require("tape");
 
 const invalidScss = (
 `.spacebetweenparens {
