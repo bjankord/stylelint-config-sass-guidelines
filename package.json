@@ -8,7 +8,9 @@
     "stylelint-scss",
     "scss",
     "sass",
-    "guidelines"
+    "guidelines",
+    "lint",
+    "linter"
   ],
   "author": "Brett Jankord",
   "license": "MIT",
@@ -36,26 +38,15 @@
     "stylelint": "^14.0.0"
   },
   "devDependencies": {
-    "prepend-file": "^2.0.0",
-    "shelljs": "^0.8.1",
     "stylelint": "^14.0.0",
     "tape": "^5.3.1"
   },
   "scripts": {
-    "build": "node scripts/build.js",
     "release:major": "npm test && npm run build && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
     "release:minor": "npm test && npm run build && npm version minor -m \"Released version %s\" && npm publish && git push --follow-tags",
     "release:patch": "npm test && npm run build && npm version patch -m \"Released version %s\" && npm publish && git push --follow-tags",
-    "scss-lint-failing-case": "cd src; bundle exec scss-lint failing-test-cases.scss -c .scss-lint.yml; exit 0",
-    "scss-lint-passing-case": "cd src; bundle exec scss-lint passing-test-cases.scss -c .scss-lint.yml; exit 0",
-    "stylelint-failing-case": "cd src; stylelint failing-test-cases.scss; exit 0",
-    "stylelint-passing-case": "cd src; stylelint passing-test-cases.scss; exit 0",
-    "tape": "tape \"__tests__/**/*.js\"",
-    "test": "npm run build && npm run tape"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "stylelint-failing-case": "cd __tests__/manual-test-cases; stylelint failing-test-cases.scss",
+    "stylelint-passing-case": "cd __tests__/manual-test-cases; stylelint passing-test-cases.scss",
+    "test": "tape \"__tests__/unit/*.spec.js\""
   }
 }

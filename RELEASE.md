@@ -15,5 +15,5 @@ Releasing the project requires these steps:
 
 
 [npm-url]: https://www.npmjs.com/package/stylelint-config-sass-guidelines
-[release-scripts-url]: https://github.com/bjankord/stylelint-config-sass-guidelines/blob/master/package.json#L48-L50
+[release-scripts-url]: https://github.com/bjankord/stylelint-config-sass-guidelines/blob/main/package.json#L48-L50
 [github-release-url]: https://github.com/bjankord/stylelint-config-sass-guidelines/releases

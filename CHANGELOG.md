@@ -4,12 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [8.0.1]
+## [Unreleased]
+### Changed
+- Updated repo to be compatible with stylelint v14. Updated stylelint peerDependency range from `^13.0.0` to `^14.0.0` [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
+- Renamed tests files extension from `.js`to `.spec.js`
+- Moved manually tested passing and failing SCSS examples into `__tests__/manual-test-cases`
+
 ### Added
 - Added node 16 to automated test matrix
 
 ### Removed
+- Dropped official support for Node 10 [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
+- Removed node 10 from automated test matrix [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/198)
 - Removed babel as a dev dependency, resolves issue with security vuln in glob-parent CVE-2020-28469
+- Removed `src/.stylelint.json`
 
 ## [8.0.0]
 ### Added
