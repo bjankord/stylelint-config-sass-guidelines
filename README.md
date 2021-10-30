@@ -171,4 +171,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 ## [Changelog](CHANGELOG.md)
 
+## Contributors
+stylelint-config-sass-guidelines is maintained myself and contributions from the community. Without the code contributions from [all these fantastic people](https://github.com/bjankord/stylelint-config-sass-guidelines/graphs/contributors), stylelint-config-sass-guidelines would not exist.
+
 ## [License](LICENSE)
