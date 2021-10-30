@@ -1,15 +1,19 @@
 # stylelint-config-sass-guidelines
 
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-sass-guidelines.svg)](https://www.npmjs.org/package/stylelint-config-sass-guidelines)
-
-[![Build Status](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines.svg?branch=master)](https://travis-ci.org/bjankord/stylelint-config-sass-guidelines)
+[![Build Status](https://github.com/bjankord/stylelint-config-sass-guidelines/workflows/CI/badge.svg)](https://github.com/bjankord/stylelint-config-sass-guidelines/actions?workflow=CI)
+[![Known Vulnerabilities](https://snyk.io/test/github/bjankord/stylelint-config-sass-guidelines/badge.svg)](https://snyk.io//test/github/bjankord/stylelint-config-sass-guidelines)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/bjankord/stylelint-config-sass-guidelines/blob/main/CONTRIBUTING.md)
 [![Downloads per month](https://img.shields.io/npm/dm/stylelint-config-sass-guidelines.svg)](http://npmcharts.com/compare/stylelint-config-sass-guidelines)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/bjankord/stylelint-config-sass-guidelines/badge.svg)](https://snyk.io//test/github/bjankord/stylelint-config-sass-guidelines)
-
-A stylelint config inspired by [sass-guidelin.es](https://sass-guidelin.es/).
+> A stylelint config inspired by [sass-guidelin.es](https://sass-guidelin.es/).
 
 This linter has been designed / tested with SCSS syntax based on the SCSS guidelines documented in https://sass-guidelin.es/. It is intended for use with SCSS syntax, not Sass (tab style) syntax.
+
+This config:
+- bundles the [`stylelint-scss` plugin pack](https://github.com/stylelint-scss/stylelint-scss) and turns on its rules that check for possible errors
+- bundles the [`stylelint-order` plugin pack](https://github.com/hudochenkov/stylelint-order) and turns on its rules that check for possible errors
+- bundles the [`postcss-scss` custom syntax](https://github.com/postcss/postcss-scss) and configures it
 
 # Translations
 
@@ -53,11 +57,6 @@ For example, to change the `indentation` to tabs and turn off the `number-leadin
 ## [Lint Report Comparison](https://github.com/bjankord/stylelint-config-sass-guidelines/wiki/Lint-Report-Comparison)
 
 ## Documentation
-
-### Plugins
-
-* [`stylelint-order`](https://github.com/hudochenkov/stylelint-order): A plugin pack of order related linting rules for stylelint.
-* [`stylelint-scss`](https://github.com/kristerkari/stylelint-scss): A collection of SCSS specific linting rules for stylelint
 
 ### Configured lints
 
