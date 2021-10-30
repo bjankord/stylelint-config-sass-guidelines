@@ -8,16 +8,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Updated repo to be compatible with stylelint v14. Updated stylelint peerDependency range from `^13.0.0` to `^14.0.0` [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
 
-### Removed
-- Dropped official support for Node 10 [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
-- Removed node 10 from automated test matrix [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/198)
-
-## [8.0.1]
 ### Added
 - Added node 16 to automated test matrix
 
 ### Removed
+- Dropped official support for Node 10 [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
+- Removed node 10 from automated test matrix [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/198)
 - Removed babel as a dev dependency, resolves issue with security vuln in glob-parent CVE-2020-28469
+- Removed `src/.stylelint.json`
 
 ## [8.0.0]
 ### Added
