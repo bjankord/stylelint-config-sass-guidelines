@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [9.0.0]
 ### Changed
 - Updated repo to be compatible with stylelint v14. Updated stylelint peerDependency range from `^13.0.0` to `^14.0.0` [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
 - Renamed tests files extension from `.js`to `.spec.js`
