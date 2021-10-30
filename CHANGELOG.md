@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Changed
 - Updated repo to be compatible with stylelint v14. Updated stylelint peerDependency range from `^13.0.0` to `^14.0.0` [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/197)
+- Renamed tests files extension from `.js`to `.spec.js`
+- Moved manually tested passing and failing SCSS examples into `__tests__/manual-test-cases`
 
 ### Added
 - Added node 16 to automated test matrix
