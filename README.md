@@ -14,6 +14,8 @@ This config:
 - bundles the [`stylelint-scss` plugin pack](https://github.com/stylelint-scss/stylelint-scss) and turns on its rules that check for possible errors
 - bundles the [`stylelint-order` plugin pack](https://github.com/hudochenkov/stylelint-order) and turns on its rules that check for possible errors
 - bundles the [`postcss-scss` custom syntax](https://github.com/postcss/postcss-scss) and configures it
+- has a peer dependency on [`stylelint ^14.0.1`](https://github.com/stylelint/stylelint) You'll need to install this package in your project
+- has a peer dependency on [`postcss ^8.3.3`](https://github.com/postcss/postcss) You'll need to install this package in your project
 
 # Translations
 
@@ -22,7 +24,7 @@ This config:
 ## Installation
 
 ```console
-$ npm i -D stylelint stylelint-config-sass-guidelines
+$ npm i -D stylelint postcss stylelint-config-sass-guidelines
 ```
 
 ## Usage
