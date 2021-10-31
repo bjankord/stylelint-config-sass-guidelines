@@ -35,10 +35,11 @@
     "stylelint-scss": "^4.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.1",
-    "postcss": "^8.3.3"
+    "postcss": "^8.3.3",
+    "stylelint": "^14.0.1"
   },
   "devDependencies": {
+    "postcss": "^8.3.3",
     "stylelint": "^14.0.1",
     "tape": "^5.3.1"
   },
