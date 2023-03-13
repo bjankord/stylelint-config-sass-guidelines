@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [10.0.0]
+### Changed
+- Updated repo to be compatible with stylelint v15
+
+### Added
+- Added node 18 to automated test matrix
+
+### Removed
+- Dropped official support for Node 12
+- Removed node 12 from automated test matrix
+- Removed tests for deprecated stylelint rules
+- Removed deprecated stylelint rules
+  - "block-opening-brace-space-before": "always"
+  - "color-hex-case": "lower"
+  - "declaration-bang-space-after": "never"
+  - "declaration-bang-space-before": "always"
+  - "declaration-block-semicolon-newline-after": "always"
+  - "declaration-block-semicolon-space-before": "never"
+  - "declaration-block-trailing-semicolon": "always"
+  - "declaration-colon-space-after": "always-single-line"
+  - "declaration-colon-space-before": "never"
+  - "function-comma-space-after": "always-single-line"
+  - "function-parentheses-space-inside": "never"
+  - "indentation": 2
+  -  "media-feature-parentheses-space-inside": "never"
+  - "no-missing-end-of-source-newline": true
+  - "number-leading-zero": "always"
+  - "number-no-trailing-zeros": true
+  - "selector-list-comma-newline-after": "always"
+  - "string-quotes": "single"
+
 ## [9.0.1]
 ### Changed
 - Add postcss ^8.3.3 as a peerDependency. Mitigates https://github.com/bjankord/stylelint-config-sass-guidelines/issues/203
