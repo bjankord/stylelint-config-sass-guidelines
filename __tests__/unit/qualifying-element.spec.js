@@ -34,10 +34,10 @@ test("Qualifying element scss", t => {
   function checkResult(result) {
     t.equal(result.warnings().length, 5, "flags 5 warning")
     t.is(result.warnings()[0].text, "Expected \"div#thing\" to have no more than 0 ID selectors (selector-max-id)", "correct warning text")
-    t.is(result.warnings()[1].text, "Unexpected qualifying type selector (selector-no-qualifying-type)", "correct warning text")
-    t.is(result.warnings()[2].text, "Unexpected qualifying type selector (selector-no-qualifying-type)", "correct warning text")
-    t.is(result.warnings()[3].text, "Unexpected qualifying type selector (selector-no-qualifying-type)", "correct warning text")
-    t.is(result.warnings()[4].text, "Unexpected qualifying type selector (selector-no-qualifying-type)", "correct warning text")
+    t.is(result.warnings()[1].text, "Unexpected qualifying type selector \"div#thing\" (selector-no-qualifying-type)", "correct warning text")
+    t.is(result.warnings()[2].text, "Unexpected qualifying type selector \"ul.list\" (selector-no-qualifying-type)", "correct warning text")
+    t.is(result.warnings()[3].text, "Unexpected qualifying type selector \"li.item\" (selector-no-qualifying-type)", "correct warning text")
+    t.is(result.warnings()[4].text, "Unexpected qualifying type selector \"a[href=\'place\']\" (selector-no-qualifying-type)", "correct warning text")
   }
 })
 
