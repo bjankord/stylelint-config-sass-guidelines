@@ -21,7 +21,7 @@ test("Shorthand scss", t => {
 
   function checkResult(result) {
     t.equal(result.warnings().length, 1, "flags 1 warning")
-    t.is(result.warnings()[0].text, "Unexpected longhand value \'1px 1px 1px 1px\' instead of \'1px\' (shorthand-property-no-redundant-values)", "correct warning text")
+    t.is(result.warnings()[0].text, "Expected \"1px 1px 1px 1px\" to be \"1px\" (shorthand-property-no-redundant-values)", "correct warning text")
   }
 })
 
