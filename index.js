@@ -44,7 +44,6 @@ module.exports = {
     "scss/at-function-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-import-partial-extension-blacklist": ["scss"],
-    "scss/at-mixin-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
     "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-colon-space-after": "always",
     "scss/dollar-variable-colon-space-before": "never",

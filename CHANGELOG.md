@@ -35,6 +35,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - "number-no-trailing-zeros": true
   - "selector-list-comma-newline-after": "always"
   - "string-quotes": "single"
+- Removed scss/at-mixin-pattern rule. Resolves [#181](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/181) and [#191](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/191)
 
 ## [9.0.1]
 ### Changed
