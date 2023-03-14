@@ -12,7 +12,6 @@ This linter has been designed / tested with SCSS syntax based on the SCSS guidel
 
 This config:
 - bundles the [`stylelint-scss` plugin pack](https://github.com/stylelint-scss/stylelint-scss) and turns on its rules that check for possible errors
-- bundles the [`stylelint-order` plugin pack](https://github.com/hudochenkov/stylelint-order) and turns on its rules that check for possible errors
 - bundles the [`postcss-scss` custom syntax](https://github.com/postcss/postcss-scss) and configures it
 - has a peer dependency on [`stylelint ^15.2.0`](https://github.com/stylelint/stylelint) You'll need to install this package in your project
 - has a peer dependency on [`postcss ^8.4.21`](https://github.com/postcss/postcss) You'll need to install this package in your project

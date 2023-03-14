@@ -1,5 +1,5 @@
 module.exports = {
-  "plugins": ["stylelint-order", "stylelint-scss"],
+  "plugins": ["stylelint-scss"],
   "customSyntax": "postcss-scss",
   "rules": {
     "at-rule-disallowed-list": ["debug"],
@@ -31,29 +31,6 @@ module.exports = {
       }
     ],
     "media-feature-name-no-vendor-prefix": true,
-    "order/order": [
-      [
-        "custom-properties",
-        "dollar-variables",
-        {
-          "type": "at-rule",
-          "name": "extend"
-        },
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": false
-        },
-        "declarations",
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": true
-        },
-        "rules"
-      ]
-    ],
-    "order/properties-alphabetical-order": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": [

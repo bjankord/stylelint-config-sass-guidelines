@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - Dropped official support for Node 12
 - Removed node 12 from automated test matrix
+- Removed stylelint-order plugin. Resolves #214
 - Removed tests for deprecated stylelint rules
 - Removed deprecated stylelint rules
   - "block-opening-brace-space-before": "always"
