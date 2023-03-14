@@ -6,10 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [10.0.0]
 ### Changed
-- Updated repo to be compatible with stylelint v15
+- Updated package to be compatible with stylelint v15
 
 ### Added
 - Added node 18 to automated test matrix
+- Added scss/no-global-function-names rule. Resolves [#268](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/268)
 
 ### Removed
 - Dropped official support for Node 12
