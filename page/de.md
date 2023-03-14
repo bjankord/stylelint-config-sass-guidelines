@@ -55,7 +55,6 @@ Zum Beispiel kannst du mit `indentation` Tabs aktivieren und die Regel `number-l
 
 ### Erweiterungen
 
-* [`stylelint-order`](https://github.com/hudochenkov/stylelint-order): Eine Erweiterung die Regel CSS-Eigenschaft sortiert.
 * [`stylelint-scss`](https://github.com/kristerkari/stylelint-scss): Eine Sammlung von SCSS-speziefischen Regeln für stylelint.
 
 ### Configured lints
