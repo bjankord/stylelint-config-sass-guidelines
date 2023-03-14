@@ -41,7 +41,7 @@
   "devDependencies": {
     "postcss": "^8.4.21",
     "stylelint": "^15.2.0",
-    "tape": "^5.3.1"
+    "tape": "^5.6.3"
   },
   "scripts": {
     "release:major": "npm test && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
