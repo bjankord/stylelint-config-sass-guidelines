@@ -13,7 +13,7 @@ This linter has been designed / tested with SCSS syntax based on the SCSS guidel
 This config:
 - bundles the [`stylelint-scss` plugin pack](https://github.com/stylelint-scss/stylelint-scss) and turns on its rules that check for possible errors
 - bundles the [`postcss-scss` custom syntax](https://github.com/postcss/postcss-scss) and configures it
-- has a peer dependency on [`stylelint ^15.2.0`](https://github.com/stylelint/stylelint) You'll need to install this package in your project
+- has a peer dependency on [`stylelint ^16.1.0`](https://github.com/stylelint/stylelint) You'll need to install this package in your project
 - has a peer dependency on [`postcss ^8.4.21`](https://github.com/postcss/postcss) You'll need to install this package in your project
 
 # Translations
@@ -116,7 +116,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 * [`scss/at-extend-no-missing-placeholder`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Disallow at-extends (`@extend`) with missing placeholders.
 * [`scss/at-function-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS functions must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
-* [`scss/at-import-no-partial-leading-underscore`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
+* [`scss/load-no-partial-leading-underscore`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
 * [`scss/at-import-partial-extension-blacklist`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md): Specify list of disallowed file extensions for partial names in `@import` commands.
   * `.scss`: Disallow the use of the `.scss` file extension in imports.
 * [scss/`at-mixin-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md): SCSS mixins must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
