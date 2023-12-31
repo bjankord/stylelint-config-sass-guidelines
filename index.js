@@ -42,7 +42,7 @@ module.exports = {
     ],
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
-    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/load-no-partial-leading-underscore": true,
     "scss/at-import-partial-extension-blacklist": ["scss"],
     "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-colon-space-after": "always",

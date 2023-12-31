@@ -15,7 +15,7 @@ test("Import path scss", t => {
   t.plan(3)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config, }))
+    .use(stylelint({ code: invalidScss, config: config, quietDeprecationWarnings: true, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)
@@ -24,7 +24,7 @@ test("Import path scss", t => {
     t.equal(result.warnings().length, 6, "flags 6 warning")
     var warningsArray = Object.values(result.warnings()).map(x => x.text);
     t.is(
-      warningsArray.includes('Unexpected leading underscore in imported partial name (scss/at-import-no-partial-leading-underscore)'),
+      warningsArray.includes('Unexpected leading underscore in imported partial name (scss/load-no-partial-leading-underscore)'),
       true,
       'correct warning text',
     )

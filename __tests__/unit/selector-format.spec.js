@@ -30,7 +30,7 @@ test("Selector format scss", t => {
   t.plan(6)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config,}))
+    .use(stylelint({ code: invalidScss, config: config, quietDeprecationWarnings: true, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)

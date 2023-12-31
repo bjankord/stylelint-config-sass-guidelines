@@ -24,7 +24,7 @@ test("Name format scss", t => {
   t.plan(4)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config,}))
+    .use(stylelint({ code: invalidScss, config: config, quietDeprecationWarnings: true, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)

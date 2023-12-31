@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [11.0.0]
+### Changed
+- Updated package to be compatible with stylelint v16
+- Replaced deprecated `"scss/at-import-no-partial-leading-underscore": true` rule with new `"scss/load-no-partial-leading-underscore": true` rule
+
+### Removed
+- Removed Node.js less than 18.12.0 support
+
 ## [10.0.0]
 ### Changed
 - Updated package to be compatible with stylelint v15
