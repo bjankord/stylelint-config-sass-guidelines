@@ -330,7 +330,7 @@ test("Valid scss", t => {
   t.plan(1)
 
   postcss()
-    .use(stylelint({ code: validScss, config: config,}))
+    .use(stylelint({ code: validScss, config: config, quietDeprecationWarnings: true, }))
     .process(validScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)

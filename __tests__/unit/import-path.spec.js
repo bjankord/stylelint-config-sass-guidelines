@@ -15,7 +15,7 @@ test("Import path scss", t => {
   t.plan(3)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config, }))
+    .use(stylelint({ code: invalidScss, config: config, quietDeprecationWarnings: true, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)

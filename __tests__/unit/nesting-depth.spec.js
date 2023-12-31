@@ -40,7 +40,7 @@ test("Nesting depth scss", t => {
   t.plan(6)
 
   postcss()
-    .use(stylelint({ code: invalidScss, config: config }))
+    .use(stylelint({ code: invalidScss, config: config, quietDeprecationWarnings: true, }))
     .process(invalidScss, { syntax: scssSyntax })
     .then(checkResult)
     .catch(logError)
@@ -74,7 +74,7 @@ test("Nesting depth scss", t => {
   }
 
   postcss()
-    .use(stylelint({ code: validScss, config: config }))
+    .use(stylelint({ code: validScss, config: config, quietDeprecationWarnings: true, }))
     .process(validScss, { syntax: scssSyntax })
     .then(function(result) {
       t.is(
