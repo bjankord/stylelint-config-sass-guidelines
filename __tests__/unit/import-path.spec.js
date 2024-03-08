@@ -29,7 +29,7 @@ test("Import path scss", t => {
       'correct warning text',
     )
     t.is(
-      warningsArray.includes('Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-blacklist)'),
+      warningsArray.includes('Unexpected extension \".scss\" in imported partial name (scss/at-import-partial-extension-disallowed-list)'),
       true,
       'correct warning text',
     )
