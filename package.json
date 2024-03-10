@@ -39,8 +39,7 @@
   },
   "devDependencies": {
     "postcss": "^8.4.21",
-    "stylelint": "^16.1.0",
-    "tape": "^5.6.3"
+    "stylelint": "^16.1.0"
   },
   "scripts": {
     "release:major": "npm test && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
@@ -48,6 +47,6 @@
     "release:patch": "npm test && npm version patch -m \"Released version %s\" && npm publish && git push --follow-tags",
     "stylelint-failing-cases": "stylelint __tests__/manual-test-cases/failing-test-cases.scss",
     "stylelint-passing-cases": "stylelint __tests__/manual-test-cases/passing-test-cases.scss",
-    "test": "tape \"__tests__/unit/*.spec.js\""
+    "test": "node --test"
   }
 }
