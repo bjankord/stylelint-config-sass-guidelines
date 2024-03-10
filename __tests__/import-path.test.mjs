@@ -34,9 +34,9 @@ describe('flags warnings with incorrect scss import path', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-blacklist)',
-        'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-blacklist)',
-        'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-blacklist)',
+				'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-disallowed-list)',
+        'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-disallowed-list)',
+        'Unexpected extension ".scss" in imported partial name (scss/at-import-partial-extension-disallowed-list)',
         'Unexpected leading underscore in imported partial name (scss/load-no-partial-leading-underscore)',
         'Unexpected leading underscore in imported partial name (scss/load-no-partial-leading-underscore)',
         'Unexpected leading underscore in imported partial name (scss/load-no-partial-leading-underscore)',
@@ -48,9 +48,9 @@ describe('flags warnings with incorrect scss import path', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.rule),
 			[
-        'scss/at-import-partial-extension-blacklist',
-        'scss/at-import-partial-extension-blacklist',
-        'scss/at-import-partial-extension-blacklist',
+        'scss/at-import-partial-extension-disallowed-list',
+        'scss/at-import-partial-extension-disallowed-list',
+        'scss/at-import-partial-extension-disallowed-list',
         'scss/load-no-partial-leading-underscore',
         'scss/load-no-partial-leading-underscore',
         'scss/load-no-partial-leading-underscore',
