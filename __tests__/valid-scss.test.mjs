@@ -1,10 +1,12 @@
-const config = require("../../index");
-const stylelint = require("stylelint");
-const postcss = require("postcss");
-const scssSyntax = require("postcss-scss");
-const test = require("tape");
+import { beforeEach, describe, it } from 'node:test';
+import assert from 'node:assert/strict';
 
-const validScss = (
+import stylelint from 'stylelint';
+
+import config from '../index.js';
+
+describe('does not error or warn on valid scss', () => {
+	const invalidScss = (
 `// Bang Format test
 .bangformat {
   color: #000 !important;
@@ -324,22 +326,30 @@ $spaceaftervariblename: #f00;
     margin: 0;
   }
 }
-`)
 
-test("Valid scss", t => {
-  t.plan(1)
-
-  postcss()
-    .use(stylelint({ code: validScss, config: config, quietDeprecationWarnings: true, }))
-    .process(validScss, { syntax: scssSyntax })
-    .then(checkResult)
-    .catch(logError)
-
-  function checkResult(result) {
-    t.equal(result.warnings().length, 0, "flags 0 warning")
+.button {
+  @each $key, $value in $colors {
+    &-#{$key} {
+      background-color: $value;
+    }
   }
-})
-
-function logError(err) {
-  console.log(err.stack)
 }
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: invalidScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('flags no warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});
