@@ -45,8 +45,6 @@
     "release:major": "npm test && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
     "release:minor": "npm test && npm version minor -m \"Released version %s\" && npm publish && git push --follow-tags",
     "release:patch": "npm test && npm version patch -m \"Released version %s\" && npm publish && git push --follow-tags",
-    "stylelint-failing-cases": "stylelint __tests__/manual-test-cases/failing-test-cases.scss",
-    "stylelint-passing-cases": "stylelint __tests__/manual-test-cases/passing-test-cases.scss",
     "test": "node --test"
   }
 }
