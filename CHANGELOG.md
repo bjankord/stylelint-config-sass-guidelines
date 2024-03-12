@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [11.1.0]
+Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v11.0.0...v11.1.0)
+### Changed
+- Replaced deprecated `scss/at-import-partial-extension-blacklist` with `scss/at-import-partial-extension-disallowed-list` rule. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/317)
+- Modernized unit test to use node:test. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/318)
+- Minor depedency updates
+
 ## [11.0.0]
 ### Changed
 - Updated package to be compatible with stylelint v16
