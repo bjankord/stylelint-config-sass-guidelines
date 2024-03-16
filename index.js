@@ -1,5 +1,8 @@
 module.exports = {
-  "plugins": ["stylelint-scss"],
+  "plugins": [
+    "stylelint-scss",
+    "@stylistic/stylelint-plugin",
+  ],
   "customSyntax": "postcss-scss",
   "rules": {
     "at-rule-disallowed-list": ["debug"],
@@ -40,17 +43,6 @@ module.exports = {
         "ignore": ["after-comment"]
       }
     ],
-    "scss/at-extend-no-missing-placeholder": true,
-    "scss/at-function-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
-    "scss/at-import-partial-extension-disallowed-list": ["scss"],
-    "scss/at-rule-no-unknown": true,
-    "scss/dollar-variable-colon-space-after": "always",
-    "scss/dollar-variable-colon-space-before": "never",
-    "scss/dollar-variable-pattern": "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
-    "scss/load-no-partial-leading-underscore": true,
-    "scss/no-global-function-names": true,
-    "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
-    "scss/selector-no-redundant-nesting-selector": true,
     "selector-class-pattern": [
       "^[a-z0-9\\-]+$",
       {
@@ -65,6 +57,35 @@ module.exports = {
     "selector-pseudo-element-colon-notation": "double",
     "selector-pseudo-element-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
-    "value-no-vendor-prefix": true
+    "value-no-vendor-prefix": true,
+    "@stylistic/block-opening-brace-space-before": "always",
+    "@stylistic/color-hex-case": "lower",
+    "@stylistic/declaration-bang-space-after": "never",
+    "@stylistic/declaration-bang-space-before": "always",
+    "@stylistic/declaration-block-semicolon-newline-after": "always",
+    "@stylistic/declaration-block-semicolon-space-before": "never",
+    "@stylistic/declaration-block-trailing-semicolon": "always",
+    "@stylistic/declaration-colon-space-after": "always-single-line",
+    "@stylistic/declaration-colon-space-before": "never",
+    "@stylistic/function-comma-space-after": "always-single-line",
+    "@stylistic/function-parentheses-space-inside": "never",
+    "@stylistic/indentation": 2,
+    "@stylistic/media-feature-parentheses-space-inside": "never",
+    "@stylistic/no-missing-end-of-source-newline": true,
+    "@stylistic/number-leading-zero": "always",
+    "@stylistic/number-no-trailing-zeros": true,
+    "@stylistic/selector-list-comma-newline-after": "always",
+    "@stylistic/string-quotes": "single",
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-function-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/at-import-partial-extension-disallowed-list": ["scss"],
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-pattern": "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/no-global-function-names": true,
+    "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/selector-no-redundant-nesting-selector": true,
   }
 }

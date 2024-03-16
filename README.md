@@ -11,10 +11,13 @@
 This linter has been designed / tested with SCSS syntax based on the SCSS guidelines documented in https://sass-guidelin.es/. It is intended for use with SCSS syntax, not Sass (tab style) syntax.
 
 This config:
-- bundles the [`stylelint-scss` plugin pack](https://github.com/stylelint-scss/stylelint-scss) and turns on its rules that check for possible errors
-- bundles the [`postcss-scss` custom syntax](https://github.com/postcss/postcss-scss) and configures it
-- has a peer dependency on [`stylelint ^16.1.0`](https://github.com/stylelint/stylelint) You'll need to install this package in your project
-- has a peer dependency on [`postcss ^8.4.21`](https://github.com/postcss/postcss) You'll need to install this package in your project
+- includes the [`stylelint-scss` plugin module](https://github.com/stylelint-scss/stylelint-scss) and turns on rules for SCSS specific code
+- includes the [`@stylistic/stylelint-plugin` plugin module](https://github.com/stylelint-stylistic/stylelint-stylistic) and turns on rules for stylistic settings
+- includes the [`postcss-scss` custom syntax module](https://github.com/postcss/postcss-scss) and configures it
+- has a peer dependency on [`stylelint`](https://github.com/stylelint/stylelint)
+  - You'll need to install this package in your project
+- has a peer dependency on [`postcss`](https://github.com/postcss/postcss)
+  - You'll need to install this package in your project
 
 # Translations
 
