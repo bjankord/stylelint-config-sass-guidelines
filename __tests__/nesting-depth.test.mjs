@@ -51,7 +51,7 @@ describe('flags warnings with nesting depth', () => {
 			[
 				'Expected nesting depth to be no more than 1 (max-nesting-depth)',
         'Expected nesting depth to be no more than 1 (max-nesting-depth)',
-        'Expected ".one .two .three .four" to have no more than 3 compound selectors (selector-max-compound-selectors)',
+        'Expected ".four" to have no more than 3 compound selectors (selector-max-compound-selectors)',
 			],
 		);
 	});

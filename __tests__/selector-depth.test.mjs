@@ -40,7 +40,7 @@ describe('flags warnings with selector depth', () => {
 			result.results[0].warnings.map((w) => w.text),
 			[
 				'Expected ".one .two .three > .four" to have no more than 3 compound selectors (selector-max-compound-selectors)',
-        'Expected ".one .two .three > .four" to have no more than 3 compound selectors (selector-max-compound-selectors)'
+        'Expected ".three > .four" to have no more than 3 compound selectors (selector-max-compound-selectors)'
 			],
 		);
 	});
