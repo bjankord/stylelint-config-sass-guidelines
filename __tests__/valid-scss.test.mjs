@@ -265,8 +265,8 @@ $spaceaftervariblename: #f00;
 
 // SpaceAroundOperator test
 .spacearoundoperator {
-  margin: 5px + 5px;
-  padding: 5px + 5px;
+  margin: 5px + 10px;
+  padding: 5px + 10px;
 }
 
 // SpaceBeforeBrace test
@@ -346,6 +346,7 @@ $spaceaftervariblename: #f00;
 	});
 
 	it('did not error', () => {
+    // console.log('result.results[0].warnings', result.results[0].warnings);
 		assert.equal(result.errored, false);
 	});
 
