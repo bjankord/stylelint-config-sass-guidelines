@@ -25,8 +25,19 @@ This config:
 
 ## Installation
 
+Using NPM
 ```console
 $ npm i -D stylelint postcss stylelint-config-sass-guidelines
+```
+
+Using Yarn
+```console
+$ yarn add -D stylelint postcss stylelint-config-sass-guidelines
+```
+
+Using PNPM
+```console
+$ pnpm add -D stylelint postcss stylelint-config-sass-guidelines
 ```
 
 ## Usage
@@ -62,7 +73,7 @@ For example:
 
 This is a list of the lints turned on in this configuration, and what they do.
 
-#### At-rule
+#### At-Rule
 
 * [`at-rule-disallowed-list`](https://stylelint.io/user-guide/rules/at-rule-disallowed-list/): Specify a list of disallowed at-rules.
   * `"debug"` Disallow the use of `@debug`.
@@ -80,7 +91,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 * [`color-named`](https://stylelint.io/user-guide/rules/color-named/): Colors must never be named.
 * [`color-no-invalid-hex`](https://stylelint.io/user-guide/rules/color-no-invalid-hex//): Hex values must be valid.
 
-#### Declaration block
+#### Declaration Block
 
 * [`declaration-block-single-line-max-declarations`](https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations/): There should never be more than `1` declaration per line.
 
@@ -113,20 +124,19 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### Rule
 
-* [`rule-empty-line-before`]https://stylelint.io/user-guide/rules/rule-empty-line-before/): There must always be an empty line before multi-line rules. _Except_: Nested rules that are the first of their parent rule. _Ignore_: Rules that come after a comment.
+* [`rule-empty-line-before`](https://stylelint.io/user-guide/rules/rule-empty-line-before/): There must always be an empty line before multi-line rules. _Except_: Nested rules that are the first of their parent rule. _Ignore_: Rules that come after a comment.
 
 #### SCSS
 
 * [`scss/at-extend-no-missing-placeholder`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Disallow at-extends (`@extend`) with missing placeholders.
 * [`scss/at-function-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS functions must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
-* [`scss/load-no-partial-leading-underscore`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
 * [`scss/at-import-partial-extension-disallowed-list`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-disallowed-list/README.md): Specify list of disallowed file extensions for partial names in `@import` commands.
   * `.scss`: Disallow the use of the `.scss` file extension in imports.
-* [scss/`at-mixin-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-mixin-pattern/README.md): SCSS mixins must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`scss/at-rule-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md): SCSS mixins must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`scss/dollar-variable-colon-space-after`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-after/README.md): Require a single space after the colon in $-variable declarations.
 * [`scss/dollar-variable-colon-space-before`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-before/README.md): Disallow whitespace before the colon in $-variable declarations.
 * [`scss/dollar-variable-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-pattern/README.md): SCSS variables must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
+* [`scss/load-no-partial-leading-underscore`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
 * [`scss/no-global-function-names`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md): Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
 * [`scss/percent-placeholder-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/percent-placeholder-pattern/README.md): SCSS `%`-placeholders must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`scss/selector-no-redundant-nesting-selector`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md): Disallow redundant nesting selectors (`&`).
@@ -134,7 +144,6 @@ This is a list of the lints turned on in this configuration, and what they do.
 #### Selector
 
 * [`selector-class-pattern`](https://stylelint.io/user-guide/rules/selector-class-pattern/): Selectors must be written in lowercase and match the regex `^(?:u|is|has)-[a-z][a-zA-Z0-9]*$|^(?!u|is|has)[a-zA-Z][a-zA-Z0-9]*(?:-[a-z][a-zA-Z0-9]*)?(?:--[a-z][a-zA-Z0-9]*)?$`.
-
 * [`selector-max-compound-selectors`](https://stylelint.io/user-guide/rules/selector-max-compound-selectors/): Limit the number of compound selectors in a selector to `3`.
 * [`selector-max-id`](https://stylelint.io/user-guide/rules/selector-max-id/): Disallow id selectors.
 * [`selector-no-qualifying-type`](https://stylelint.io/user-guide/rules/selector-no-qualifying-type/): Disallow qualifying a selector by type.
