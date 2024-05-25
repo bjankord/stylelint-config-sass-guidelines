@@ -47,7 +47,7 @@ describe('flags warnings with max-nesting-depth lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-        'Expected nesting depth to be no more than 1 (max-nesting-depth)'
+				'Expected nesting depth to be no more than 1 (max-nesting-depth)',
 			],
 		);
 	});
