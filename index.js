@@ -58,7 +58,6 @@ module.exports = {
     "selector-pseudo-element-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": true,
-    // TODO - Document all @stylistic rules in README.md
     "@stylistic/block-opening-brace-space-before": "always",
     "@stylistic/color-hex-case": "lower",
     "@stylistic/declaration-bang-space-after": "never",

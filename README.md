@@ -151,6 +151,27 @@ This is a list of the lints turned on in this configuration, and what they do.
 * [`selector-pseudo-element-colon-notation`](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation/): Applicable pseudo-elements must always use the double colon notation.
 * [`selector-pseudo-element-no-unknown`](https://stylelint.io/user-guide/rules/selector-pseudo-element-no-unknown/): Disallow unknown pseudo-element selectors.
 
+#### Stylistic
+* [`@stylistic/block-opening-brace-space-before`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/block-opening-brace-space-before/README.md): There must always be a single space before the opening brace.
+* [`@stylistic/color-hex-case`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/color-hex-case/README.md): Hex colors must be written in lowercase.
+* [`@stylistic/declaration-bang-space-after`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-bang-space-after/README.md): There must never be whitespace after the bang.
+* [`@stylistic/declaration-bang-space-before`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-bang-space-before/README.md): There must always be a single space before the bang.
+* [`@stylistic/declaration-block-semicolon-newline-after`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-block-semicolon-newline-after/README.md): There must always be a newline after the semicolon.
+* [`@stylistic/declaration-block-semicolon-space-before`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-block-semicolon-space-before/README.md): There must never be whitespace before the semicolons.
+* [`@stylistic/declaration-block-trailing-semicolon`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-block-trailing-semicolon/README.md): There must always be a trailing semicolon.
+* [`@stylistic/declaration-colon-space-after`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-colon-space-after/README.md): There must always be a single space after the colon if the declaration's value is single-line.
+* [`@stylistic/declaration-colon-space-before`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/declaration-colon-space-before/README.md): There must never be whitespace before the colon.
+* [`@stylistic/function-comma-space-after`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/function-comma-space-after/README.md): There must always be a single space after the commas in single-line functions.
+* [`@stylistic/function-parentheses-space-inside`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/function-parentheses-space-inside/README.md): There must never be whitespace on the inside of the parentheses of functions.
+* [`@stylistic/indentation`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/indentation/README.md): Indentation should always be 2 spaces.
+
+* [`@stylistic/media-feature-parentheses-space-inside`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/media-feature-parentheses-space-inside/README.md): There must never be whitespace on the inside of the parentheses of media features.
+* [`@stylistic/no-missing-end-of-source-newline`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/no-missing-end-of-source-newline/README.md): Disallow missing end-of-file newlines in non-empty files.
+* [`@stylistic/number-leading-zero`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/number-leading-zero/README.md): There must always be a leading zero.
+* [`@stylistic/number-no-trailing-zeros`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/number-no-trailing-zeros/README.md): Disallow trailing zeros in numbers.
+* [`@stylistic/selector-list-comma-newline-after`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/selector-list-comma-newline-after/README.md): There must always be a newline after the commas of selector lists.
+* [`@stylistic/string-quotes`](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/string-quotes/README.md): Strings must always be wrapped with single quotes.
+
 #### Value
 
 * [`value-no-vendor-prefix`](https://stylelint.io/user-guide/rules/value-no-vendor-prefix/): Disallow vendor prefixes for values.
