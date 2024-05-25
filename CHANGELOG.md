@@ -4,12 +4,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [12.0.0]
+Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v11.1.0...v12.0.0)
+### Added
+- Added the following stylistic rules back that were removed in v10 thanks to the [@stylistic/stylelint-plugin](https://github.com/stylelint-stylistic/stylelint-stylistic/tree/main)
+  - `@stylistic/block-opening-brace-space-before`
+  - `@stylistic/color-hex-case`
+  - `@stylistic/declaration-bang-space-after`
+  - `@stylistic/declaration-bang-space-before`
+  - `@stylistic/declaration-block-semicolon-newline-after`
+  - `@stylistic/declaration-block-semicolon-space-before`
+  - `@stylistic/declaration-block-trailing-semicolon`
+  - `@stylistic/declaration-colon-space-after`
+  - `@stylistic/declaration-colon-space-before`
+  - `@stylistic/function-comma-space-after`
+  - `@stylistic/function-parentheses-space-inside`
+  - `@stylistic/indentation`
+  - `@stylistic/media-feature-parentheses-space-inside`
+  - `@stylistic/no-missing-end-of-source-newline`
+  - `@stylistic/number-leading-zero`
+  - `@stylistic/number-no-trailing-zeros`
+  - `@stylistic/selector-list-comma-newline-after`
+  - `@stylistic/string-quotes`
+
 ## [11.1.0]
 Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v11.0.0...v11.1.0)
 ### Changed
 - Replaced deprecated `scss/at-import-partial-extension-blacklist` with `scss/at-import-partial-extension-disallowed-list` rule. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/317)
 - Modernized unit test to use node:test. [PR](https://github.com/bjankord/stylelint-config-sass-guidelines/pull/318)
-- Minor depedency updates
+- Minor dependency updates
 
 ## [11.0.0]
 ### Changed
