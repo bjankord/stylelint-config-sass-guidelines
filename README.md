@@ -1,10 +1,10 @@
 # stylelint-config-sass-guidelines
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-sass-guidelines.svg)](https://www.npmjs.org/package/stylelint-config-sass-guidelines)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-sass-guidelines.svg)](https://www.npmjs.com/package/stylelint-config-sass-guidelines)
 [![Build Status](https://github.com/bjankord/stylelint-config-sass-guidelines/workflows/CI/badge.svg)](https://github.com/bjankord/stylelint-config-sass-guidelines/actions?workflow=CI)
 [![Known Vulnerabilities](https://snyk.io/test/github/bjankord/stylelint-config-sass-guidelines/badge.svg)](https://snyk.io//test/github/bjankord/stylelint-config-sass-guidelines)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/bjankord/stylelint-config-sass-guidelines/blob/main/CONTRIBUTING.md)
-[![Downloads per month](https://img.shields.io/npm/dm/stylelint-config-sass-guidelines.svg)](http://npmcharts.com/compare/stylelint-config-sass-guidelines)
+[![Downloads per month](https://img.shields.io/npm/dm/stylelint-config-sass-guidelines.svg)](https://npmcharts.com/compare/stylelint-config-sass-guidelines)
 
 > A stylelint config inspired by [sass-guidelin.es](https://sass-guidelin.es/).
 
@@ -89,7 +89,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 * [`color-hex-length`](https://stylelint.io/user-guide/rules/color-hex-length/): Always use short hex notation, where available.
 * [`color-named`](https://stylelint.io/user-guide/rules/color-named/): Colors must never be named.
-* [`color-no-invalid-hex`](https://stylelint.io/user-guide/rules/color-no-invalid-hex//): Hex values must be valid.
+* [`color-no-invalid-hex`](https://stylelint.io/user-guide/rules/color-no-invalid-hex/): Hex values must be valid.
 
 #### Declaration Block
 
@@ -119,7 +119,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 * [`property-no-unknown`](https://stylelint.io/user-guide/rules/property-no-unknown/): Disallow unknown properties
 * [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix/): Disallow vendor prefixes for properties.
-* [`shorthand-property-no-redundant-values`](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values//): Disallow redundant values in shorthand properties.
+* [`shorthand-property-no-redundant-values`](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/): Disallow redundant values in shorthand properties.
 
 
 #### Rule
@@ -128,18 +128,18 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 #### SCSS
 
-* [`scss/at-extend-no-missing-placeholder`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Disallow at-extends (`@extend`) with missing placeholders.
-* [`scss/at-function-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS functions must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
-* [`scss/at-import-partial-extension-disallowed-list`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-import-partial-extension-disallowed-list/README.md): Specify list of disallowed file extensions for partial names in `@import` commands.
+* [`scss/at-extend-no-missing-placeholder`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md): Disallow at-extends (`@extend`) with missing placeholders.
+* [`scss/at-function-pattern`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-function-pattern/README.md): SCSS functions must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
+* [`scss/at-import-partial-extension-disallowed-list`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-partial-extension-disallowed-list/README.md): Specify list of disallowed file extensions for partial names in `@import` commands.
   * `.scss`: Disallow the use of the `.scss` file extension in imports.
 * [`scss/at-rule-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md): SCSS mixins must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
-* [`scss/dollar-variable-colon-space-after`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-after/README.md): Require a single space after the colon in $-variable declarations.
-* [`scss/dollar-variable-colon-space-before`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-before/README.md): Disallow whitespace before the colon in $-variable declarations.
-* [`scss/dollar-variable-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/dollar-variable-pattern/README.md): SCSS variables must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
+* [`scss/dollar-variable-colon-space-after`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-after/README.md): Require a single space after the colon in $-variable declarations.
+* [`scss/dollar-variable-colon-space-before`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-colon-space-before/README.md): Disallow whitespace before the colon in $-variable declarations.
+* [`scss/dollar-variable-pattern`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-pattern/README.md): SCSS variables must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
 * [`scss/load-no-partial-leading-underscore`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md): Disallow leading underscore in partial names in `@import`.
 * [`scss/no-global-function-names`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md): Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
-* [`scss/percent-placeholder-pattern`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/percent-placeholder-pattern/README.md): SCSS `%`-placeholders must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
-* [`scss/selector-no-redundant-nesting-selector`](https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md): Disallow redundant nesting selectors (`&`).
+* [`scss/percent-placeholder-pattern`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/percent-placeholder-pattern/README.md): SCSS `%`-placeholders must be written in lowercase and match the regex `^[a-z]+([a-z0-9-]+[a-z0-9]+)?$`.
+* [`scss/selector-no-redundant-nesting-selector`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md): Disallow redundant nesting selectors (`&`).
 
 #### Selector
 
