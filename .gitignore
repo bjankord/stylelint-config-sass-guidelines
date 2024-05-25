@@ -7,4 +7,3 @@ vendor
 coverage
 .nyc_output
 .history
-package-lock.json
