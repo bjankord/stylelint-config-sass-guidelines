@@ -51,3 +51,30 @@ describe('flags warnings with media-feature-parentheses-space-inside lint', () =
 		);
 	});
 });
+
+describe('does not flag warnings with valid media-feature-parentheses-space-inside', () => {
+	const validScss = (
+`@media (max-width: 300px) {
+  .media-parens {
+    margin: 0;
+  }
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

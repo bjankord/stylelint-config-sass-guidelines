@@ -71,3 +71,112 @@ describe('flags warnings with selector-class-pattern lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid selector-class-pattern', () => {
+	const validScss = (
+`.selector-format {
+  color: #f00;
+}
+
+.foo {
+  color: #f00;
+}
+
+.foo5 {
+  color: #f00;
+}
+
+.foo-5 {
+  color: #f00;
+}
+
+.foo--5 {
+  color: #f00;
+}
+
+.foo-bar {
+  color: #f00;
+}
+
+.foo--bar {
+  color: #f00;
+}
+
+.foo-bar-5 {
+  color: #f00;
+}
+
+.foo-bar-baz {
+  color: #f00;
+}
+
+.foo-bar--baz {
+  color: #f00;
+}
+
+.foo-bar-baz--qux {
+  color: #f00;
+}
+
+.foo-bar--baz--qux {
+  color: #f00;
+}
+
+.foo--bar--baz--qux {
+  color: #f00;
+}
+
+.u-hidden {
+  color: #f00;
+}
+
+.u-class-name {
+  color: #f00;
+}
+
+.is-stateclass {
+  color: #f00;
+}
+
+.has-state-class {
+  color: #f00;
+}
+
+.js-dependantclass {
+  color: #f00;
+}
+
+.namespace-u-text-center {
+  color: #f00;
+}
+
+.namespace-u-sm-size11of12 {
+  color: #f00;
+}
+
+.u-foobar17 {
+  color: #f00;
+}
+
+.u-16by9 {
+  color: #f00;
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

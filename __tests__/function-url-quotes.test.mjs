@@ -47,3 +47,28 @@ describe('flags warnings with function-url-quotes lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid function-url-quotes', () => {
+	const validScss = (
+`.test-selector {
+   background: url('example.png');
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

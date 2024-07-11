@@ -47,3 +47,28 @@ describe('flags warnings with length-zero-no-unit lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid length-zero-no-unit', () => {
+	const validScss = (
+`.test-selector {
+  margin: 0;
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

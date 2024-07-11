@@ -58,3 +58,27 @@ describe('flags warnings with scss/at-import-partial-extension-disallowed-list l
 		);
 	});
 });
+
+describe('does not flag warnings with valid scss/at-import-partial-extension-disallowed-list lint', () => {
+	const validScss = (
+`@import 'foo/bar';
+@import 'bar';
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

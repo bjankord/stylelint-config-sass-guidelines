@@ -54,3 +54,29 @@ a
 		);
 	});
 });
+
+describe('does not flag warnings with valid selector-list-comma-newline-after', () => {
+	const validScss = (
+`a, 
+b {
+  color: #fff;
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});
