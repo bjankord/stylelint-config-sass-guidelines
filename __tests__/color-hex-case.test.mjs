@@ -47,3 +47,28 @@ describe('flags warnings with color-hex-case lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid color-hex-case', () => {
+	const validScss = (
+`.test-selector {
+  color: #fff;
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('flags warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});
