@@ -64,11 +64,11 @@ describe('does not flag warnings with valid color-hex-case', () => {
 		});
 	});
 
-	it('did error', () => {
+	it('did not error', () => {
 		assert.equal(result.errored, false);
 	});
 
-	it('flags warnings', () => {
+	it('does not flag warnings', () => {
 		assert.equal(result.results[0].warnings.length, 0);
 	});
 });
