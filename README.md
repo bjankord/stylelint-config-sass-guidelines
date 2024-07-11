@@ -19,10 +19,6 @@ This config:
 - has a peer dependency on [`postcss`](https://github.com/postcss/postcss)
   - You'll need to install this package in your project
 
-# Translations
-
-* [Deutsch](page/de.md)
-
 ## Installation
 
 Using NPM
