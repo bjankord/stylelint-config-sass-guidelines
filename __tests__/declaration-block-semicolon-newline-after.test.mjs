@@ -51,8 +51,8 @@ describe('flags warnings with declaration-block-semicolon-newline-after lint', (
 describe('does not flag warnings with valid declaration-block-semicolon-newline-after', () => {
 	const validScss = (
 `.test-selector { 
-  color: #fff; 
-  top: 0; 
+  color: #fff;
+  border: 0;
 }
 
 `);

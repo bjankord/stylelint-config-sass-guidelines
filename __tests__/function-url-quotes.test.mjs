@@ -51,7 +51,7 @@ describe('flags warnings with function-url-quotes lint', () => {
 describe('does not flag warnings with valid function-url-quotes', () => {
 	const validScss = (
 `.test-selector {
-   background: url('example.png');
+  background: url('example.png');
 }
 
 `);

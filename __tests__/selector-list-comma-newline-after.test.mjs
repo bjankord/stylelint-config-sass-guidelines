@@ -57,7 +57,7 @@ a
 
 describe('does not flag warnings with valid selector-list-comma-newline-after', () => {
 	const validScss = (
-`a, 
+`a,
 b {
   color: #fff;
 }
