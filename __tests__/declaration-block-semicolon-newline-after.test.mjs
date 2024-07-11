@@ -47,3 +47,30 @@ describe('flags warnings with declaration-block-semicolon-newline-after lint', (
 		);
 	});
 });
+
+describe('does not flag warnings with valid declaration-block-semicolon-newline-after', () => {
+	const validScss = (
+`.test-selector { 
+  color: #fff;
+  border: 0;
+}
+
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

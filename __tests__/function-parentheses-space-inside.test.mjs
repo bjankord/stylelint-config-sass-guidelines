@@ -50,3 +50,29 @@ describe('flags warnings with function-parentheses-space-inside lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid function-parentheses-space-inside', () => {
+	const validScss = (
+`.test-selector {
+  @include box-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+  color: rgba(0, 0, 0, 0.1);
+}
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});

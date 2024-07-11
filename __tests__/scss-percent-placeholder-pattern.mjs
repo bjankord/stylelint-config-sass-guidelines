@@ -47,3 +47,29 @@ describe('flags warnings with scss/percent-placeholder-pattern lint', () => {
 		);
 	});
 });
+
+describe('does not flag warnings with valid scss/percent-placeholder-pattern lint', () => {
+	const validScss = (
+`%place-holder {
+  color: #f00;
+}
+
+`);
+
+	let result;
+
+	beforeEach(async () => {
+		result = await stylelint.lint({
+			code: validScss,
+			config,
+		});
+	});
+
+	it('did not error', () => {
+		assert.equal(result.errored, false);
+	});
+
+	it('does not flag warnings', () => {
+		assert.equal(result.results[0].warnings.length, 0);
+	});
+});
