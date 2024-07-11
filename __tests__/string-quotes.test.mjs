@@ -52,7 +52,11 @@ describe('flags warnings with string-quotes lint', () => {
 
 describe('does not flag warnings with valid string-quotes', () => {
 	const validScss = (
-`.test-selector { content: 'test'; }
+`.test-selector { 
+  content: 'test'; 
+}
+
+
 `);
 
 	let result;

@@ -53,6 +53,7 @@ describe('does not flag warnings with valid function-url-quotes', () => {
 `.test-selector {
    background: url('example.png');
 }
+
 `);
 
 	let result;

@@ -61,6 +61,7 @@ describe('does not flag warnings with valid selector-list-comma-newline-after', 
 b {
   color: #fff;
 }
+
 `);
 
 	let result;

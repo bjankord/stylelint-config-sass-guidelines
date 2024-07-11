@@ -62,7 +62,9 @@ describe('does not flag warnings with valid selector-pseudo-element-colon-notati
 
 a:hover {
   color: #f00;
-}`);
+}
+  
+`);
 
 	let result;
 

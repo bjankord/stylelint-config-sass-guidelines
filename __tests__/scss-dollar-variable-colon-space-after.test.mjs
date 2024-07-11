@@ -50,6 +50,7 @@ describe('flags warnings with scss/dollar-variable-colon-space-after lint', () =
 describe('does not flag warnings with valid scss/dollar-variable-colon-space-after', () => {
 	const validScss = (
 `a { $var: 10px;}
+
 `);
 
 	let result;

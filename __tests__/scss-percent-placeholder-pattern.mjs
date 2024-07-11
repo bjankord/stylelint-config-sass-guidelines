@@ -52,7 +52,9 @@ describe('does not flag warnings with valid scss/percent-placeholder-pattern lin
 	const validScss = (
 `%place-holder {
   color: #f00;
-}`);
+}
+
+`);
 
 	let result;
 

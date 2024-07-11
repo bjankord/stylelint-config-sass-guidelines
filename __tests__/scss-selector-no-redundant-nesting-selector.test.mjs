@@ -56,7 +56,9 @@ describe('does not flag warnings with valid scss/selector-no-redundant-nesting-s
   > .bar {
     color: #f00;
   }
-}`);
+}
+  
+`);
 
 	let result;
 

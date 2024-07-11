@@ -54,6 +54,7 @@ describe('does not flag warnings with valid declaration-block-semicolon-newline-
   color: #fff; 
   top: 0; 
 }
+
 `);
 
 	let result;

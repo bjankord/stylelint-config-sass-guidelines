@@ -10,6 +10,7 @@ describe('flags warnings with selector-pseudo-element-no-unknown lint', () => {
 `p::hover {
   color: #f00;
 }
+
 `);
 
 	let result;

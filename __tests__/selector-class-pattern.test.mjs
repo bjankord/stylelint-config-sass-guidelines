@@ -161,6 +161,7 @@ describe('does not flag warnings with valid selector-class-pattern', () => {
 .u-16by9 {
   color: #f00;
 }
+
 `);
 
 	let result;

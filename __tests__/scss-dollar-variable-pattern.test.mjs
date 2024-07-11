@@ -48,7 +48,9 @@ describe('flags warnings with invalid scss/dollar-variable-pattern lint', () => 
 
 describe('does not flag warnings with valid scss/dollar-variable-pattern lint', () => {
 	const validScss = (
-`$my-var: 10px;`);
+`$my-var: 10px;
+
+`);
 
 	let result;
 

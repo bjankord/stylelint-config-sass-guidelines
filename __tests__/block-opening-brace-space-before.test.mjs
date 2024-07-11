@@ -53,7 +53,10 @@ describe('flags warnings with block-opening-brace-space-before lint', () => {
 
 describe('does not flag warnings with valid block-opening-brace-space-before', () => {
 	const validScss = (
-`.test-selector { color: #fff; }`);
+`.test-selector { 
+  color: #fff; 
+}
+`);
 
 	let result;
 
