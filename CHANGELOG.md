@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [12.1.0]
+Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v12.0.0...v12.1.0)
+### Changed
+- Bumped @stylistic/stylelint-plugin from 2.1.2 to 3.0.1
+- Bumped stylelint from 16.6.1 to 16.9.0
+- Bumped postcss from 8.4.39 to 8.4.45
+- Bumped stylelint-scss from 6.4.1 to 6.6.0
+
 ## [12.0.0]
 Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v11.1.0...v12.0.0)
 ### Added
