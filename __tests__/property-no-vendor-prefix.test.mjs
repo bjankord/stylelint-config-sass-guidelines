@@ -34,7 +34,7 @@ describe('flags warnings with property-no-vendor-prefix lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Unexpected vendor-prefix "-webkit-transform" (property-no-vendor-prefix)',
+				'Unexpected vendor-prefixed property "-webkit-transform" (property-no-vendor-prefix)',
 			],
 		);
 	});

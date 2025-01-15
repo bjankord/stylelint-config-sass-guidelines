@@ -35,7 +35,7 @@ describe('flags warnings with at-rule-disallowed lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Unexpected at-rule "debug" (at-rule-disallowed-list)',
+				'Unexpected at-rule "@debug" (at-rule-disallowed-list)'
 			],
 		);
 	});
