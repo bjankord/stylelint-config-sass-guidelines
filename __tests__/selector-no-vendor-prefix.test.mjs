@@ -34,7 +34,7 @@ describe('flags warnings with selector-no-vendor-prefix lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-        'Unexpected vendor-prefix "::-moz-placeholder" (selector-no-vendor-prefix)',
+				'Unexpected vendor-prefixed selector "::-moz-placeholder" (selector-no-vendor-prefix)'
 			],
 		);
 	});

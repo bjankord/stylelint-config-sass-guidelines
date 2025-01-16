@@ -33,7 +33,7 @@ describe('flags warnings with value-no-vendor-prefix lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-        'Unexpected vendor-prefix "-webkit-flex" (value-no-vendor-prefix)',
+				'Unexpected vendor-prefixed value "-webkit-flex" (value-no-vendor-prefix)',
 			],
 		);
 	});
