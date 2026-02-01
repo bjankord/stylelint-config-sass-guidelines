@@ -46,10 +46,10 @@ a[href='place'] {
 			result.results[0].warnings.map((w) => w.text),
 			[
 				'Expected "div#thing" to have no more than 0 ID selectors (selector-max-id)',
-        'Unexpected qualifying type selector "div#thing" (selector-no-qualifying-type)',
-        'Unexpected qualifying type selector "ul.list" (selector-no-qualifying-type)',
-        'Unexpected qualifying type selector "li.item" (selector-no-qualifying-type)',
-        'Unexpected qualifying type selector "a[href=\'place\']" (selector-no-qualifying-type)'
+				'Unexpected qualifying type selector "div" in "div#thing" (selector-no-qualifying-type)',
+				'Unexpected qualifying type selector "ul" in "ul.list" (selector-no-qualifying-type)',
+				'Unexpected qualifying type selector "li" in "li.item" (selector-no-qualifying-type)',
+				`Unexpected qualifying type selector "a" in "a[href='place']" (selector-no-qualifying-type)`
 			],
 		);
 	});

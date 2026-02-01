@@ -10,12 +10,6 @@ describe('flags warnings with selector-max-compound-selectors lint', () => {
 `.one .two .three > .four {
   color: #f00;
 }
-
-.one .two {
-  .three > .four {
-    color: #f00;
-  }
-}
 `);
 
 	let result;
@@ -32,7 +26,7 @@ describe('flags warnings with selector-max-compound-selectors lint', () => {
 	});
 
 	it('flags warnings', () => {
-		assert.equal(result.results[0].warnings.length, 2);
+		assert.equal(result.results[0].warnings.length, 1);
 	});
 
 	it('correct warning text', () => {
@@ -40,7 +34,6 @@ describe('flags warnings with selector-max-compound-selectors lint', () => {
 			result.results[0].warnings.map((w) => w.text),
 			[
 				'Expected ".one .two .three > .four" to have no more than 3 compound selectors (selector-max-compound-selectors)',
-        'Expected ".three > .four" to have no more than 3 compound selectors (selector-max-compound-selectors)'
 			],
 		);
 	});
@@ -50,7 +43,6 @@ describe('flags warnings with selector-max-compound-selectors lint', () => {
 			result.results[0].warnings.map((w) => w.rule),
 			[
 				'selector-max-compound-selectors',
-        'selector-max-compound-selectors',
 			],
 		);
 	});

@@ -23,24 +23,24 @@
     "url": "https://github.com/bjankord/stylelint-config-sass-guidelines/issues"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.19.0"
   },
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^3.0.1",
+    "@stylistic/stylelint-plugin": "^5.0.1",
     "postcss-scss": "^4.0.9",
-    "stylelint-scss": "^6.2.1"
+    "stylelint-scss": "^7.0.0"
   },
   "peerDependencies": {
     "postcss": "^8.4.21",
-    "stylelint": "^16.1.0"
+    "stylelint": "^17.1.0"
   },
   "devDependencies": {
     "postcss": "^8.4.21",
-    "stylelint": "^16.1.0"
+    "stylelint": "^17.1.0"
   },
   "scripts": {
     "release:major": "npm test && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",

@@ -32,9 +32,9 @@ describe('flags warnings with function-parentheses-space-inside lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Unexpected whitespace after "(" (@stylistic/function-parentheses-space-inside)',
-        'Unexpected whitespace before ")" (@stylistic/function-parentheses-space-inside)',
-        'Unexpected whitespace before ")" (@stylistic/function-parentheses-space-inside)'
+			   'Unexpected whitespace after "(" in a single-line function (@stylistic/function-parentheses-space-inside)',
+			   'Unexpected whitespace before ")" in a single-line function (@stylistic/function-parentheses-space-inside)',
+			   'Unexpected whitespace before ")" in a single-line function (@stylistic/function-parentheses-space-inside)'
 			],
 		);
 	});
@@ -56,6 +56,11 @@ describe('does not flag warnings with valid function-parentheses-space-inside', 
 `.test-selector {
   @include box-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
   color: rgba(0, 0, 0, 0.1);
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent $tab-bottom-rounding,
+    var(--tab-background) $tab-bottom-rounding
+  );
 }
 `);
 
