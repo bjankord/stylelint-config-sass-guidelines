@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Next]
+## [13.0.0]
 Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v12.1.0...v13.0.0)
 ### Changed
 - Bumped stylelint from 16.9.0 to 17.1.0
