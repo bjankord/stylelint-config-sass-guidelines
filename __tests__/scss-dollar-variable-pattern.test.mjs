@@ -31,7 +31,7 @@ describe('flags warnings with invalid scss/dollar-variable-pattern lint', () => 
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-        'Expected $ variable name to match specified pattern (scss/dollar-variable-pattern)',
+              'Expected "myVar" to match pattern "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$" (scss/dollar-variable-pattern)',
 			],
 		);
 	});

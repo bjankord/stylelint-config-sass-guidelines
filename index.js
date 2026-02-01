@@ -68,7 +68,7 @@ module.exports = {
     "@stylistic/declaration-colon-space-after": "always-single-line",
     "@stylistic/declaration-colon-space-before": "never",
     "@stylistic/function-comma-space-after": "always-single-line",
-    "@stylistic/function-parentheses-space-inside": "never",
+    "@stylistic/function-parentheses-space-inside": "never-single-line",
     "@stylistic/indentation": 2,
     "@stylistic/media-feature-parentheses-space-inside": "never",
     "@stylistic/no-missing-end-of-source-newline": true,

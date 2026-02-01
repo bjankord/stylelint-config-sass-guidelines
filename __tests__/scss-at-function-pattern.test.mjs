@@ -33,7 +33,7 @@ describe('flags warnings with scss/at-function-pattern lint', () => {
 		assert.deepEqual(
 			result.results[0].warnings.map((w) => w.text),
 			[
-				'Expected @function name to match specified pattern (scss/at-function-pattern)',
+			  'Expected "calculationFunction" to match pattern "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$" (scss/at-function-pattern)',
 			],
 		);
 	});

@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Next]
+Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v12.1.0...v13.0.0)
+### Changed
+- Bumped stylelint from 16.9.0 to 17.1.0
+- Bumped stylelint-scss from 6.6.0 to 7.0.0
+- Bumped @stylistic/stylelint-plugin from 3.0.1 to 5.0.1
+- Updated minimum node version to 20.19.0
+- Updated "@stylistic/function-parentheses-space-inside": "never" to "@stylistic/function-parentheses-space-inside": "never-single-line" for better support with prettier
+
 ## [12.1.0]
 Full list of changes can be [viewed here](https://github.com/bjankord/stylelint-config-sass-guidelines/compare/v12.0.0...v12.1.0)
 ### Changed
